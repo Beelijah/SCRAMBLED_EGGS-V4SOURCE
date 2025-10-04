@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "idle",
+			"fps": 20,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [66, 283],
+			"anim": "singLEFT",
+			"fps": 20,
+			"name": "left",
+			"indices": [1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+		},
+		{
+			"loop": false,
+			"offsets": [121, 274],
+			"anim": "singDOWN",
+			"fps": 20,
+			"name": "down",
+			"indices": [1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+		},
+		{
+			"loop": false,
+			"offsets": [286, 278],
+			"anim": "singUP",
+			"fps": 20,
+			"name": "up",
+			"indices": [1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+		},
+		{
+			"loop": false,
+			"offsets": [13, 281],
+			"anim": "singRIGHT",
+			"fps": 20,
+			"name": "right",
+			"indices": [1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": true,
+	"image": "characters/huy-finaleP2",
+	"position": [260, 440],
+	"healthicon": "huy",
+	"flip_x": false,
+	"healthbar_colors": [0, 75, 255],
+	"camera_position": [-410, -310],
+	"sing_duration": 4,
+	"scale": 1.2,
+	"_editor_isPlayer": false
+}

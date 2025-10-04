@@ -1,0 +1,130 @@
+{
+	"camera_boyfriend": [
+		150,
+		50
+	],
+	"preload": {
+		"images/stageback": 3,
+		"images/stagefront": 3,
+		"images/stagecurtains": 2,
+		"images/stage_light": 2
+	},
+	"_editorMeta": {
+		"boyfriend": "egg-finale",
+		"dad": "redguy-no_modding",
+		"gf": "modded-fx"
+	},
+	"boyfriend": [
+		770,
+		100
+	],
+	"stageUI": "",
+	"girlfriend": [
+		-809,
+		-210
+	],
+	"defaultZoom": 0.55,
+	"objects": [
+		{
+			"x": -927,
+			"y": -523,
+			"scale": [
+				1,
+				1
+			],
+			"image": "IHY/Ladrillos y ventanas",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bg",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				0.5,
+				0.5
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -792,
+			"y": -227,
+			"scale": [
+				0.75,
+				0.75
+			],
+			"image": "IHY/PuenteCompleto",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bridge",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -878,
+			"y": 982,
+			"scale": [
+				1.5,
+				1.45
+			],
+			"image": "IHY/Luigi_IHY_Background_Assets_Lava",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "lava",
+			"firstAnimation": "idle",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1.1,
+				1.1
+			],
+			"alpha": 1,
+			"animations": [
+				{
+					"offsets": null,
+					"indices": [],
+					"fps": 15,
+					"anim": "idle",
+					"loop": true,
+					"name": "Lava"
+				}
+			],
+			"type": "animatedSprite"
+		},
+		{
+			"type": "gf"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "boyfriend"
+		}
+	],
+	"camera_girlfriend": [
+		50,
+		100
+	],
+	"opponent": [
+		100,
+		100
+	],
+	"directory": "week1",
+	"camera_speed": 1,
+	"hide_girlfriend": false,
+	"camera_opponent": [
+		0,
+		0
+	]
+}

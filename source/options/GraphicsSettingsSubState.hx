@@ -5,18 +5,17 @@ import objects.Character;
 class GraphicsSettingsSubState extends BaseOptionsMenu
 {
 	var antialiasingOption:Int;
-	var boyfriend:Character = null;
+	var eggsettings:Character = null;
 	public function new()
 	{
 		title = Language.getPhrase('graphics_menu', 'Graphics Settings');
-		rpcTitle = 'Graphics Settings Menu'; //for Discord Rich Presence
 
-		boyfriend = new Character(840, 170, 'bf', true);
-		boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.75));
-		boyfriend.updateHitbox();
-		boyfriend.dance();
-		boyfriend.animation.finishCallback = function (name:String) boyfriend.dance();
-		boyfriend.visible = false;
+		eggsettings = new Character(840, 50, 'eggsettings', true);
+		eggsettings.setGraphicSize(Std.int(eggsettings.width * 0.75));
+		eggsettings.updateHitbox();
+		eggsettings.dance();
+		eggsettings.animation.finishCallback = function (name:String) eggsettings.dance();
+		eggsettings.visible = false;
 
 		//I'd suggest using "Low Quality" as an example for making your own option since it is the simplest here
 		var option:Option = new Option('Low Quality', //Name
@@ -54,14 +53,14 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 
 		final refreshRate:Int = FlxG.stage.application.window.displayMode.refreshRate;
 		option.minValue = 60;
-		option.maxValue = 240;
+		option.maxValue = 360; // unnecessary but useful for sweats
 		option.defaultValue = Std.int(FlxMath.bound(refreshRate, option.minValue, option.maxValue));
 		option.displayFormat = '%v FPS';
 		option.onChange = onChangeFramerate;
 		#end
 
 		super();
-		insert(1, boyfriend);
+		insert(1, eggsettings);
 	}
 
 	function onChangeAntiAliasing()
@@ -92,6 +91,6 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 	override function changeSelection(change:Int = 0)
 	{
 		super.changeSelection(change);
-		boyfriend.visible = (antialiasingOption == curSelected);
+		eggsettings.visible = (antialiasingOption == curSelected);
 	}
 }

@@ -1,0 +1,2 @@
+Value 1: "1" to appear, "0" to disappear, "2" to use red text, and "3" to swap back to grey.
+Value 2: text to write

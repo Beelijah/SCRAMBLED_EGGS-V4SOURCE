@@ -54,8 +54,8 @@ class ControlsSubState extends MusicBeatSubstate
 	var grpBinds:FlxTypedGroup<Alphabet>;
 	var selectSpr:AttachedSprite;
 
-	var gamepadColor:FlxColor = 0xfffd7194;
-	var keyboardColor:FlxColor = 0xff7192fd;
+	var gamepadColor:FlxColor = 0xffffffff;
+	var keyboardColor:FlxColor = 0xffffffff;
 	var onKeyboardMode:Bool = true;
 	
 	var controllerSpr:FlxSprite;
@@ -63,10 +63,6 @@ class ControlsSubState extends MusicBeatSubstate
 	public function new()
 	{
 		super();
-
-		#if DISCORD_ALLOWED
-		DiscordClient.changePresence("Controls Menu", null);
-		#end
 
 		options.push([true]);
 		options.push([true]);

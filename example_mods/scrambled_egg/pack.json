@@ -1,0 +1,9 @@
+ {
+	"name": "SCRAMBLED_EGGS V3",
+	"description": "The third scrambled_eggs mod",
+	"restart": false,
+	"runsGlobally": false,
+	"color": [170, 0, 255],
+	"discordRPC": "863222024192262205",
+	"iconFramerate": 10
+}

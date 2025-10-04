@@ -1,0 +1,179 @@
+{
+	"camera_boyfriend": [
+		0,
+		-50
+	],
+	"_editorMeta": {
+		"boyfriend": "jess",
+		"dad": "egg",
+		"gf": "good-friends-fx"
+	},
+	"girlfriend": [
+		-645,
+		-145
+	],
+	"stageUI": "normal",
+	"boyfriend": [
+		666,
+		96
+	],
+	"defaultZoom": 0.55,
+	"objects": [
+		{
+			"x": -938,
+			"y": -402,
+			"scale": [
+				1.25,
+				1.25
+			],
+			"image": "week1/images/stageback",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bg",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -939,
+			"y": 631,
+			"scale": [
+				1.25,
+				1.25
+			],
+			"image": "week1/images/stagefront",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "floor",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -3126,
+			"y": -441,
+			"scale": [
+				10,
+				10
+			],
+			"image": "ytchannelBG",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "ytbg",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -768,
+			"y": -103,
+			"scale": [
+				2,
+				2
+			],
+			"image": "ytchannel",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "yt",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "boyfriend"
+		},
+		{
+			"x": -953,
+			"y": 650,
+			"scale": [
+				2.5,
+				2.5
+			],
+			"image": "friendsfg1",
+			"flipX": true,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "friendsfg1",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				0.5,
+				0.5
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 626,
+			"y": 539,
+			"scale": [
+				2.5,
+				2.5
+			],
+			"image": "friendsfg2",
+			"flipX": true,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "friendsfg2",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				0.5,
+				0.5
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"type": "gf"
+		}
+	],
+	"camera_girlfriend": [
+		0,
+		-50
+	],
+	"camera_speed": 1,
+	"directory": "",
+	"opponent": [
+		196,
+		83
+	],
+	"camera_opponent": [
+		0,
+		-50
+	],
+	"hide_girlfriend": false
+}

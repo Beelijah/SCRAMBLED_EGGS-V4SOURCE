@@ -18,6 +18,7 @@ import lime.utils.Assets;
 import openfl.utils.Assets as OpenFlAssets;
 import openfl.events.KeyboardEvent;
 import haxe.Json;
+import options.OptionsState; // whoops almost forgot to import this
 
 import cutscenes.DialogueBoxPsych;
 
@@ -77,16 +78,17 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
 	public static var ratingStuff:Array<Dynamic> = [
-		['You Suck!', 0.2], //From 0% to 19%
-		['Shit', 0.4], //From 20% to 39%
-		['Bad', 0.5], //From 40% to 49%
-		['Bruh', 0.6], //From 50% to 59%
-		['Meh', 0.69], //From 60% to 68%
-		['Nice', 0.7], //69%
-		['Good', 0.8], //From 70% to 79%
-		['Great', 0.9], //From 80% to 89%
-		['Sick!', 1], //From 90% to 99%
-		['Perfect!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
+		['Cooked', 0.1],        //From 0% to 9%          Custom
+		['Doo Doo', 0.2],       //From 10% to 19%        You Suck!
+		['Horrible', 0.4],      //From 20% to 39%        Shit
+		['Bad', 0.5],           //From 40% to 49%        Bad
+		['Bruh', 0.6],          //From 50% to 59%        Meh
+		['Okay', 0.67],         //From 60% to 66%        Okay
+		['67', 0.68],           //67%                    67
+		['Good', 0.8],          //From 68% to 79%        Good (and "Nice" at 69%)
+		['Super Good', 0.9],    //From 80% to 89%        Great
+		['Cooking!', 1],        //From 90% to 99%        Sick!
+		['LIGHTWORK!!!', 1]     //100%                   Perfect!!
 	];
 
 	//event variables
@@ -320,19 +322,6 @@ class PlayState extends MusicBeatState
 
 		Conductor.mapBPMChanges(SONG);
 		Conductor.bpm = SONG.bpm;
-
-		#if DISCORD_ALLOWED
-		// String that contains the mode defined here so it isn't necessary to call changePresence for each mode
-		storyDifficultyText = Difficulty.getString();
-
-		if (isStoryMode)
-			detailsText = "Story Mode: " + WeekData.getCurrentWeek().weekName;
-		else
-			detailsText = "Freeplay";
-
-		// String for when the game is paused
-		detailsPausedText = "Paused - " + detailsText;
-		#end
 
 		GameOverSubstate.resetVariables();
 		songName = Paths.formatToSongPath(SONG.song);
@@ -623,8 +612,6 @@ class PlayState extends MusicBeatState
 			Paths.music(PauseSubState.songName);
 		else if(Paths.formatToSongPath(ClientPrefs.data.pauseMusic) != 'none')
 			Paths.music(Paths.formatToSongPath(ClientPrefs.data.pauseMusic));
-
-		resetRPC();
 
 		stagesFunc(function(stage:BaseStage) stage.createPost());
 		callOnScripts('onCreatePost');
@@ -1259,10 +1246,6 @@ class PlayState extends MusicBeatState
 		FlxTween.tween(timeBar, {alpha: 1}, 0.5, {ease: FlxEase.circOut});
 		FlxTween.tween(timeTxt, {alpha: 1}, 0.5, {ease: FlxEase.circOut});
 
-		#if DISCORD_ALLOWED
-		// Updating Discord Rich Presence (with Time Left)
-		if(autoUpdateRPC) DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength);
-		#end
 		setOnScripts('songLength', songLength);
 		callOnScripts('onSongStart');
 	}
@@ -1602,42 +1585,8 @@ class PlayState extends MusicBeatState
 
 			paused = false;
 			callOnScripts('onResume');
-			resetRPC(startTimer != null && startTimer.finished);
+
 		}
-	}
-
-	#if DISCORD_ALLOWED
-	override public function onFocus():Void
-	{
-		super.onFocus();
-		if (!paused && health > 0)
-		{
-			resetRPC(Conductor.songPosition > 0.0);
-		}
-	}
-
-	override public function onFocusLost():Void
-	{
-		super.onFocusLost();
-		if (!paused && health > 0 && autoUpdateRPC)
-		{
-			DiscordClient.changePresence(detailsPausedText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
-		}
-	}
-	#end
-
-	// Updating Discord Rich Presence.
-	public var autoUpdateRPC:Bool = true; //performance setting for custom RPC things
-	function resetRPC(?showTime:Bool = false)
-	{
-		#if DISCORD_ALLOWED
-		if(!autoUpdateRPC) return;
-
-		if (showTime)
-			DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.data.noteOffset);
-		else
-			DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
-		#end
 	}
 
 	function resyncVocals():Void
@@ -1711,6 +1660,8 @@ class PlayState extends MusicBeatState
 				openChartEditor();
 			else if (controls.justPressed('debug_2'))
 				openCharacterEditor();
+			else if (FlxG.keys.justPressed.FIVE)
+				openMasterEditor(); // haxe is quirky - scrambled_egg3
 		}
 
 		if (healthBar.bounds.max != null && health > healthBar.bounds.max)
@@ -1930,10 +1881,6 @@ class PlayState extends MusicBeatState
 				}
 		}
 		openSubState(new PauseSubState());
-
-		#if DISCORD_ALLOWED
-		if(autoUpdateRPC) DiscordClient.changePresence(detailsPausedText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
-		#end
 	}
 
 	function openChartEditor()
@@ -1951,11 +1898,6 @@ class PlayState extends MusicBeatState
 		if(opponentVocals != null)
 			opponentVocals.pause();
 
-		#if DISCORD_ALLOWED
-		DiscordClient.changePresence("Chart Editor", null, null, true);
-		DiscordClient.resetClientID();
-		#end
-
 		MusicBeatState.switchState(new ChartingState());
 	}
 
@@ -1972,9 +1914,23 @@ class PlayState extends MusicBeatState
 			vocals.pause();
 		if(opponentVocals != null)
 			opponentVocals.pause();
+	}
 
-		#if DISCORD_ALLOWED DiscordClient.resetClientID(); #end
-		MusicBeatState.switchState(new CharacterEditorState(SONG.player2));
+	function openMasterEditor() // im so smart - scrambled_egg3
+	{
+		canResync = false;
+		FlxG.camera.followLerp = 0;
+		persistentUpdate = false;
+		paused = true;
+
+		if(FlxG.sound.music != null)
+			FlxG.sound.music.stop();
+		if(vocals != null)
+			vocals.pause();
+		if(opponentVocals != null)
+			opponentVocals.pause();
+
+		MusicBeatState.switchState(new states.editors.MasterEditorMenu());
 	}
 
 	public var isDead:Bool = false; //Don't mess with this on Lua!!!
@@ -2027,10 +1983,6 @@ class PlayState extends MusicBeatState
 
 				// MusicBeatState.switchState(new GameOverState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
 
-				#if DISCORD_ALLOWED
-				// Game Over doesn't get his its variable because it's only used here
-				if(autoUpdateRPC) DiscordClient.changePresence("Game Over - " + detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
-				#end
 				isDead = true;
 				return true;
 			}
@@ -2298,6 +2250,21 @@ class PlayState extends MusicBeatState
 			case 'Play Sound':
 				if(flValue2 == null) flValue2 = 1;
 				FlxG.sound.play(Paths.sound(value1), flValue2);
+
+			case 'Open Options Menu': // corresponds to custom source event i made
+				canResync = false;    // yes this is copied and pasted from the MasterEditorMenu thing i made earlier
+				FlxG.camera.followLerp = 0;
+				persistentUpdate = false;
+				paused = true;
+
+				if(FlxG.sound.music != null)
+					FlxG.sound.music.stop();
+				if(vocals != null)
+					vocals.pause();
+				if(opponentVocals != null)
+					opponentVocals.pause();
+
+				MusicBeatState.switchState(new OptionsState());
 		}
 
 		stagesFunc(function(stage:BaseStage) stage.eventCalled(eventName, value1, value2, flValue1, flValue2, strumTime));
@@ -2458,7 +2425,6 @@ class PlayState extends MusicBeatState
 				{
 					Mods.loadTopMod();
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
-					#if DISCORD_ALLOWED DiscordClient.resetClientID(); #end
 
 					canResync = false;
 					MusicBeatState.switchState(new StoryMenuState());
@@ -2496,7 +2462,6 @@ class PlayState extends MusicBeatState
 			{
 				trace('WENT BACK TO FREEPLAY??');
 				Mods.loadTopMod();
-				#if DISCORD_ALLOWED DiscordClient.resetClientID(); #end
 
 				canResync = false;
 				MusicBeatState.switchState(new FreeplayState());

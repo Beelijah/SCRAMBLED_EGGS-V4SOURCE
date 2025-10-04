@@ -1,0 +1,3 @@
+texture = "noteSkins/sword-note"
+noteSplashData.texture = 'noteSkins/Pico-White_NOTE_assets_notesplashes'
+hitsound = "confirmMenu"

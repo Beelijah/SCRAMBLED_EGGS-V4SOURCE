@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="YouCannotBeatUS_Bowser_Asset.png" width="1274" height="1128">
+	<SubTexture name="Down" x="604" y="660" width="652" height="390" rotated="true" frameX="-0" frameY="-0" frameWidth="390" frameHeight="652"/>
+	<SubTexture name="Idle" x="882" y="2" width="390" height="652" frameX="-0" frameY="-0" frameWidth="390" frameHeight="658"/>
+	<SubTexture name="Left" x="2" y="660" width="596" height="466" rotated="true" frameX="-16" frameY="-0" frameWidth="482" frameHeight="596"/>
+	<SubTexture name="Right" x="2" y="2" width="436" height="652" frameX="-0" frameY="-0" frameWidth="442" frameHeight="652"/>
+	<SubTexture name="Up" x="444" y="2" width="432" height="652" frameX="-20" frameY="-0" frameWidth="482" frameHeight="652"/>
+</TextureAtlas>

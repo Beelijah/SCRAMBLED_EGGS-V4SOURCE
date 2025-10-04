@@ -1,0 +1,39 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 24,
+			"anim": "run",
+			"indices": [],
+			"name": "Legs"
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "hidden",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "hidden",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/MM_Pico-Legs",
+	"position": [620, 510],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [165, 0, 77],
+	"camera_position": [0, 0],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

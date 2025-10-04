@@ -94,21 +94,7 @@ class TitleState extends MusicBeatState
 			StoryMenuState.weekCompleted = FlxG.save.data.weekCompleted;
 		}
 
-		FlxG.mouse.visible = false;
-		#if FREEPLAY
-		MusicBeatState.switchState(new FreeplayState());
-		#elseif CHARTING
-		MusicBeatState.switchState(new ChartingState());
-		#else
-		if(FlxG.save.data.flashing == null && !FlashingState.leftState)
-		{
-			FlxTransitionableState.skipNextTransIn = true;
-			FlxTransitionableState.skipNextTransOut = true;
-			MusicBeatState.switchState(new FlashingState());
-		}
-		else
-			startIntro();
-		#end
+		startIntro();
 	}
 
 	var logoBl:FlxSprite;
@@ -203,12 +189,7 @@ class TitleState extends MusicBeatState
 		add(credGroup);
 		add(ngSpr);
 
-		if (initialized)
-			skipIntro();
-		else
-			initialized = true;
-
-		// credGroup.add(credTextShit);
+		MusicBeatState.switchState(new FreeplayState());
 	}
 
 	// JSON data
@@ -387,7 +368,7 @@ class TitleState extends MusicBeatState
 
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
-					MusicBeatState.switchState(new MainMenuState());
+					MusicBeatState.switchState(new FreeplayState()); // MusicBeatState.switchState(new MainMenuState()) <- this was the old one
 					closedState = true;
 				});
 				// FlxG.sound.play(Paths.music('titleShoot'), 0.7);

@@ -1,0 +1,119 @@
+{
+	"camera_boyfriend": [
+		-300,
+		-50
+	],
+	"_editorMeta": {
+		"boyfriend": "ray-playable",
+		"gf": "modded-fx",
+		"dad": "huy-finale"
+	},
+	"preload": {
+		"images/stage_light": 2,
+		"images/stagecurtains": 2,
+		"images/stagefront": 3,
+		"images/stageback": 3
+	},
+	"girlfriend": [
+		-733,
+		-161
+	],
+	"stageUI": "",
+	"boyfriend": [
+		922,
+		51
+	],
+	"camera_girlfriend": [
+		0,
+		0
+	],
+	"defaultZoom": 0.6,
+	"objects": [
+		{
+			"x": -901,
+			"y": -605,
+			"scale": [
+				1,
+				1
+			],
+			"image": "ThirdBGTrees",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bg3",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				0.5,
+				0.5
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -647,
+			"y": -579,
+			"scale": [
+				0.85,
+				0.85
+			],
+			"image": "SecondBGTrees",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bg2",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				0.7,
+				0.7
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -910,
+			"y": -553,
+			"scale": [
+				0.85,
+				0.85
+			],
+			"image": "MainFloorAndTreesCLEAN",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bg",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"type": "gf"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "boyfriend"
+		}
+	],
+	"camera_speed": 1,
+	"directory": "week1",
+	"opponent": [
+		100,
+		100
+	],
+	"camera_opponent": [
+		50,
+		-100
+	],
+	"hide_girlfriend": false
+}

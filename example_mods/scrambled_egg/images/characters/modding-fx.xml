@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="modding-fx.png" width="5131" height="4774" spritePadding="3" borderPadding="1">
+	<SubTexture name="fadeout1" x="2567" y="1447" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadeout10" x="2567" y="2170" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadeout2" x="1" y="2893" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadeout3" x="1284" y="2893" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadeout4" x="2567" y="2893" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadeout5" x="1" y="3616" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadeout6" x="1284" y="3616" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadeout7" x="2567" y="3616" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadeout8" x="3850" y="1" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadeout9" x="3850" y="724" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="idle" x="4960" y="2170" width="1" height="1" frameX="0" frameY="0" frameWidth="1" frameHeight="1"/>
+	<SubTexture name="spotlight1" x="3850" y="2170" width="550" height="434" frameX="0" frameY="0" frameWidth="550" frameHeight="434"/>
+	<SubTexture name="spotlight10" x="4403" y="2170" width="550" height="434" frameX="0" frameY="0" frameWidth="550" frameHeight="434"/>
+	<SubTexture name="spotlight2" x="3850" y="2607" width="550" height="434" frameX="0" frameY="0" frameWidth="550" frameHeight="434"/>
+	<SubTexture name="spotlight3" x="4403" y="2607" width="550" height="434" frameX="0" frameY="0" frameWidth="550" frameHeight="434"/>
+	<SubTexture name="spotlight4" x="3850" y="3044" width="550" height="434" frameX="0" frameY="0" frameWidth="550" frameHeight="434"/>
+	<SubTexture name="spotlight5" x="4403" y="3044" width="550" height="434" frameX="0" frameY="0" frameWidth="550" frameHeight="434"/>
+	<SubTexture name="spotlight6" x="3850" y="3481" width="550" height="434" frameX="0" frameY="0" frameWidth="550" frameHeight="434"/>
+	<SubTexture name="spotlight7" x="4403" y="3481" width="550" height="434" frameX="0" frameY="0" frameWidth="550" frameHeight="434"/>
+	<SubTexture name="spotlight8" x="1" y="4339" width="550" height="434" frameX="0" frameY="0" frameWidth="550" frameHeight="434"/>
+	<SubTexture name="spotlight9" x="554" y="4339" width="550" height="434" frameX="0" frameY="0" frameWidth="550" frameHeight="434"/>
+	<SubTexture name="staticSpotlight" x="1107" y="4339" width="550" height="434" frameX="0" frameY="0" frameWidth="550" frameHeight="434"/>
+	<SubTexture name="waitFadeout" x="3850" y="1447" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadein1" x="1" y="1" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadein10" x="1" y="724" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadein11" x="4956" y="2170" width="1" height="1" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadein2" x="1284" y="1" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadein3" x="1284" y="724" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadein4" x="1" y="1447" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadein5" x="1284" y="1447" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadein6" x="1" y="2170" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadein7" x="1284" y="2170" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadein8" x="2567" y="1" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="fadein9" x="2567" y="724" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+</TextureAtlas>

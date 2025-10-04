@@ -1,0 +1,71 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"offsets": [0, 10],
+			"loop": false,
+			"fps": 23,
+			"anim": "spotlight",
+			"indices": [],
+			"name": "spotlight"
+		},
+		{
+			"offsets": [0, 10],
+			"loop": true,
+			"fps": 24,
+			"anim": "spotlight-loop",
+			"indices": [],
+			"name": "staticSpotlight"
+		},
+		{
+			"offsets": [693, 282],
+			"loop": false,
+			"fps": 20,
+			"anim": "fadeOut",
+			"indices": [],
+			"name": "fadeout"
+		},
+		{
+			"offsets": [693, 282],
+			"loop": true,
+			"fps": 24,
+			"anim": "fadeOut-loop",
+			"indices": [],
+			"name": "waitFadeout"
+		},
+		{
+			"offsets": [693, 282],
+			"indices": [],
+			"fps": 20,
+			"anim": "fadeIn",
+			"loop": false,
+			"name": "fadein"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/modding-fx",
+	"position": [190, 0],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [165, 0, 77],
+	"camera_position": [0, 0],
+	"sing_duration": 999,
+	"scale": 1.9,
+	"_editor_isPlayer": false
+}

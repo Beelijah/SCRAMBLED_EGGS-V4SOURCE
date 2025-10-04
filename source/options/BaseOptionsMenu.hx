@@ -24,7 +24,6 @@ class BaseOptionsMenu extends MusicBeatSubstate
 	private var descText:FlxText;
 
 	public var title:String;
-	public var rpcTitle:String;
 
 	public var bg:FlxSprite;
 	public function new()
@@ -32,14 +31,9 @@ class BaseOptionsMenu extends MusicBeatSubstate
 		super();
 
 		if(title == null) title = 'Options';
-		if(rpcTitle == null) rpcTitle = 'Options Menu';
-		
-		#if DISCORD_ALLOWED
-		DiscordClient.changePresence(rpcTitle, null);
-		#end
 		
 		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
-		bg.color = 0xFFea71fd;
+		bg.color = 0xFFFFFFFF;
 		bg.screenCenter();
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		add(bg);
@@ -97,7 +91,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 				grpTexts.add(valueText);
 				optionsArray[i].child = valueText;
 			}
-			//optionText.snapToPosition(); //Don't ignore me when i ask for not making a fucking pull request to uncomment this line ok
+			optionText.snapToPosition(); //Don't ignore me when i ask for not making a fucking pull request to uncomment this line ok
 			updateTextFrom(optionsArray[i]);
 		}
 

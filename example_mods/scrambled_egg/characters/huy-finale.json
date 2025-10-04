@@ -1,0 +1,71 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "idle",
+			"fps": 20,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [46, 283],
+			"anim": "singLEFT",
+			"fps": 20,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [32, 316],
+			"anim": "singRIGHT",
+			"fps": 20,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [78, 284],
+			"anim": "singUP",
+			"fps": 20,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [51, 314],
+			"anim": "singDOWN",
+			"fps": 20,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-36, 286],
+			"anim": "attack1",
+			"fps": 20,
+			"name": "attackStart",
+			"indices": [1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+		},
+		{
+			"loop": false,
+			"offsets": [-115, 283],
+			"anim": "attack2",
+			"fps": 20,
+			"name": "attackEnd",
+			"indices": [1, 2, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": true,
+	"image": "characters/huy-finale",
+	"position": [-70, 230],
+	"healthicon": "huy",
+	"flip_x": false,
+	"healthbar_colors": [0, 75, 255],
+	"camera_position": [-60, -120],
+	"sing_duration": 4,
+	"scale": 1.2,
+	"_editor_isPlayer": false
+}

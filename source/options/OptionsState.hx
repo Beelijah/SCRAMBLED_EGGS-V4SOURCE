@@ -1,6 +1,7 @@
 package options;
 
 import states.MainMenuState;
+import states.FreeplayState;
 import backend.StageData;
 
 class OptionsState extends MusicBeatState
@@ -12,7 +13,6 @@ class OptionsState extends MusicBeatState
 		'Graphics',
 		'Visuals',
 		'Gameplay'
-		#if TRANSLATIONS_ALLOWED , 'Language' #end
 	];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
@@ -34,8 +34,6 @@ class OptionsState extends MusicBeatState
 				openSubState(new options.GameplaySettingsSubState());
 			case 'Adjust Delay and Combo':
 				MusicBeatState.switchState(new options.NoteOffsetState());
-			case 'Language':
-				openSubState(new options.LanguageSubState());
 		}
 	}
 
@@ -44,13 +42,9 @@ class OptionsState extends MusicBeatState
 
 	override function create()
 	{
-		#if DISCORD_ALLOWED
-		DiscordClient.changePresence("Options Menu", null);
-		#end
-
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
-		bg.color = 0xFFea71fd;
+		bg.color = 0xFFFFFFFF;
 		bg.updateHitbox();
 
 		bg.screenCenter();
@@ -82,9 +76,6 @@ class OptionsState extends MusicBeatState
 	{
 		super.closeSubState();
 		ClientPrefs.saveSettings();
-		#if DISCORD_ALLOWED
-		DiscordClient.changePresence("Options Menu", null);
-		#end
 	}
 
 	override function update(elapsed:Float) {
@@ -104,7 +95,7 @@ class OptionsState extends MusicBeatState
 				LoadingState.loadAndSwitchState(new PlayState());
 				FlxG.sound.music.volume = 0;
 			}
-			else MusicBeatState.switchState(new MainMenuState());
+			else MusicBeatState.switchState(new FreeplayState());
 		}
 		else if (controls.ACCEPT) openSelectedSubstate(options[curSelected]);
 	}

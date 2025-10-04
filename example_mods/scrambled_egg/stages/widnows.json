@@ -1,0 +1,173 @@
+{
+	"camera_boyfriend": [
+		5,
+		-60
+	],
+	"_editorMeta": {
+		"boyfriend": "egg-finale",
+		"gf": "gf",
+		"dad": "nedmac"
+	},
+	"preload": {
+		"images/stage_light": 2,
+		"images/stagecurtains": 2,
+		"images/stagefront": 3,
+		"images/stageback": 3
+	},
+	"girlfriend": [
+		460,
+		150
+	],
+	"stageUI": "",
+	"boyfriend": [
+		1050,
+		100
+	],
+	"defaultZoom": 0.9,
+	"objects": [
+		{
+			"x": -816,
+			"y": -704,
+			"scale": [
+				1.4,
+				1.4
+			],
+			"image": "img0",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bg",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -187,
+			"y": -657,
+			"scale": [
+				1.9,
+				1.9
+			],
+			"image": "bar",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bar",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -760,
+			"y": -657,
+			"scale": [
+				1.9,
+				1.9
+			],
+			"image": "barEND",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "barEND",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 1672,
+			"y": -839,
+			"scale": [
+				9999,
+				9999
+			],
+			"filters": 3,
+			"color": "000000",
+			"angle": 0,
+			"name": "cover",
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "square"
+		},
+		{
+			"x": -10186,
+			"y": -1073,
+			"scale": [
+				9999,
+				9999
+			],
+			"filters": 3,
+			"color": "000000",
+			"angle": 0,
+			"name": "cover3",
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "square"
+		},
+		{
+			"x": -959,
+			"y": 859,
+			"scale": [
+				9999,
+				9999
+			],
+			"filters": 3,
+			"color": "000000",
+			"angle": 0,
+			"name": "cover2",
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "square"
+		},
+		{
+			"type": "gf"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "boyfriend"
+		}
+	],
+	"camera_girlfriend": [
+		0,
+		-25
+	],
+	"camera_speed": 1,
+	"directory": "week1",
+	"opponent": [
+		40,
+		95
+	],
+	"camera_opponent": [
+		100,
+		-5
+	],
+	"hide_girlfriend": true
+}

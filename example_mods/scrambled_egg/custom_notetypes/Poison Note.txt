@@ -1,0 +1,7 @@
+texture = "noteSkins/poisonNote"
+noteSplashData.texture = 'noteSkins/poisonNote_notesplashes'
+hitsound = "confirmMenu"
+hitHealth = '-0.25'
+missHealth = '0'
+hitCausesMiss = true
+ignoreNote = true

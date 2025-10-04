@@ -1,0 +1,5 @@
+Value 1: x
+Value 2: y
+
+x = 700 to 950 is strumline. (l to r)
+y = 25  to 500 is strumline. (t to b)

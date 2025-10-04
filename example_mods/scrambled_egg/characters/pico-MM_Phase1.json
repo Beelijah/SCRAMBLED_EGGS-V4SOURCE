@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [-65, -40],
+			"anim": "idle",
+			"fps": 24,
+			"name": "PicoCrouchIdle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-75, -27],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "PicoCrouchUp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-72, -46],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "PicoCrouchDown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-85, -38],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "PicoCrouchLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-86, -33],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "PicoCrouchRight",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/MM_Pico",
+	"position": [-210, 300],
+	"healthicon": "pico",
+	"flip_x": true,
+	"healthbar_colors": [183, 216, 85],
+	"camera_position": [200, 40],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

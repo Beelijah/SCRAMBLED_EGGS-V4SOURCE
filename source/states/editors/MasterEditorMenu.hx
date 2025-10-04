@@ -29,10 +29,6 @@ class MasterEditorMenu extends MusicBeatState
 	override function create()
 	{
 		FlxG.camera.bgColor = FlxColor.BLACK;
-		#if DISCORD_ALLOWED
-		// Updating Discord Rich Presence
-		DiscordClient.changePresence("Editors Main Menu", null);
-		#end
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.scrollFactor.set();
@@ -99,7 +95,7 @@ class MasterEditorMenu extends MusicBeatState
 
 		if (controls.BACK)
 		{
-			MusicBeatState.switchState(new MainMenuState());
+			MusicBeatState.switchState(new FreeplayState());
 		}
 
 		if (controls.ACCEPT)

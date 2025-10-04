@@ -1,0 +1,39 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [-10, -440],
+			"anim": "fadeOut",
+			"fps": 20,
+			"name": "fadeout",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": true,
+	"image": "characters/good-friends",
+	"position": [0, 0],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [165, 0, 77],
+	"camera_position": [0, 0],
+	"sing_duration": 999,
+	"scale": 10,
+	"_editor_isPlayer": false
+}

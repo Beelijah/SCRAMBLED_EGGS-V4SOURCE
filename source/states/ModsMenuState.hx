@@ -62,11 +62,6 @@ class ModsMenuState extends MusicBeatState
 		modsList = Mods.parseList();
 		Mods.loadTopMod();
 
-		#if DISCORD_ALLOWED
-		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
-		#end
-
 		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.color = 0xFF665AFF;
 		bg.antialiasing = ClientPrefs.data.antialiasing;

@@ -1,0 +1,39 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [-221, -217],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "TopLeftBack",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-248, -195],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "TopUpBack",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-139, -16],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "TopRightBack",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/MM_Pico",
+	"position": [10, 240],
+	"healthicon": "pico",
+	"flip_x": true,
+	"healthbar_colors": [255, 0, 0],
+	"camera_position": [70, 40],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

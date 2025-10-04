@@ -1,0 +1,95 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 20,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [-7, -4],
+			"indices": [1, 2, 3, 4, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6],
+			"fps": 15,
+			"anim": "laughstart",
+			"loop": false,
+			"name": "laughstart"
+		},
+		{
+			"offsets": [-22, -3],
+			"indices": [1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+			"fps": 15,
+			"anim": "laugh",
+			"loop": false,
+			"name": "laugh"
+		},
+		{
+			"offsets": [0, 4],
+			"indices": [1, 2, 3, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+			"fps": 15,
+			"anim": "youlittlestart",
+			"loop": false,
+			"name": "youlittlestart"
+		},
+		{
+			"offsets": [4, -3],
+			"indices": [1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+			"fps": 15,
+			"anim": "youlittle",
+			"loop": false,
+			"name": "youlittle"
+		},
+		{
+			"offsets": [80, 5],
+			"indices": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12],
+			"fps": 15,
+			"anim": "doyoustart",
+			"loop": false,
+			"name": "doyoustart"
+		},
+		{
+			"offsets": [42, -14],
+			"indices": [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1],
+			"fps": 2,
+			"anim": "doyouknow",
+			"loop": true,
+			"name": "doyouknow"
+		},
+		{
+			"offsets": [80, 5],
+			"indices": [12,11,10,9,8,7,6,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],
+			"fps": 15,
+			"anim": "doyouknowEND",
+			"loop": false,
+			"name": "doyoustart"
+		},
+		{
+			"offsets": [-10, -7],
+			"indices": [1, 2, 3, 4, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6],
+			"fps": 15,
+			"anim": "iamthe",
+			"loop": false,
+			"name": "iamthe"
+		},
+		{
+			"offsets": [-10, -7],
+			"indices": [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+			"fps": 15,
+			"anim": "iamtheEND",
+			"loop": false,
+			"name": "iamthe"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/tyler-cutscene",
+	"position": [-60, 90],
+	"healthicon": "tyler",
+	"flip_x": false,
+	"healthbar_colors": [255, 255, 255],
+	"camera_position": [140, 0],
+	"sing_duration": 4,
+	"scale": 0.9,
+	"_editor_isPlayer": false
+}

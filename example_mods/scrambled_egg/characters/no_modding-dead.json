@@ -1,0 +1,39 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "death"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "death"
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "death",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/modding-death",
+	"position": [620, 280],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [49, 176, 209],
+	"camera_position": [0, 10],
+	"sing_duration": 4,
+	"scale": 1.9,
+	"_editor_isPlayer": false
+}

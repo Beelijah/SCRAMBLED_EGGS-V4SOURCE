@@ -1,0 +1,185 @@
+{
+	"camera_boyfriend": [
+		-650,
+		-450
+	],
+	"preload": {
+		"images/stageback": 3,
+		"images/stagefront": 3,
+		"images/stagecurtains": 2,
+		"images/stage_light": 2
+	},
+	"_editorMeta": {
+		"boyfriend": "egg-bars",
+		"dad": "redguy-no_modding",
+		"gf": "modded-fx"
+	},
+	"boyfriend": [
+		172,
+		701
+	],
+	"stageUI": "",
+	"girlfriend": [
+		796,
+		945
+	],
+	"camera_girlfriend": [
+		-1300,
+		-950
+	],
+	"defaultZoom": 0.6,
+	"objects": [
+		{
+			"x": 896,
+			"y": 636,
+			"scale": [
+				3,
+				3
+			],
+			"image": "no-modding/HallyBG4",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bfBG",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"type": "boyfriend"
+		},
+		{
+			"x": 356,
+			"y": 637,
+			"scale": [
+				3,
+				3
+			],
+			"image": "no-modding/HallyBG2",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "hallyBG",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"x": 355,
+			"y": 632,
+			"scale": [
+				3,
+				3
+			],
+			"image": "no-modding/HallyBG1",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "barMiddle",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 1342,
+			"y": 39,
+			"scale": [
+				5,
+				9
+			],
+			"image": "black",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bar2",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 219,
+			"y": 478,
+			"scale": [
+				1,
+				5
+			],
+			"image": "black",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bar",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"type": "gf"
+		},
+		{
+			"x": 448,
+			"y": -36,
+			"scale": [
+				3.5,
+				3.5
+			],
+			"image": "no-modding/bgbottom",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "otherScreenBG",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		}
+	],
+	"opponent": [
+		401,
+		598
+	],
+	"directory": "week1",
+	"camera_speed": 1,
+	"hide_girlfriend": false,
+	"camera_opponent": [
+		100,
+		-350
+	]
+}

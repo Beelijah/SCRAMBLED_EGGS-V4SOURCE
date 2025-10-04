@@ -18,7 +18,6 @@ class ModSettingsSubState extends BaseOptionsMenu
 
 		title = '';
 		//title = name;
-		rpcTitle = 'Mod Settings ($name)'; //for Discord Rich Presence
 
 		if(FlxG.save.data.modSettings == null) FlxG.save.data.modSettings = new Map<String, Dynamic>();
 		else

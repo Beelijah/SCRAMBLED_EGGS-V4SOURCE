@@ -14,7 +14,6 @@ class VisualsSettingsSubState extends BaseOptionsMenu
 	public function new()
 	{
 		title = Language.getPhrase('visuals_menu', 'Visuals Settings');
-		rpcTitle = 'Visuals Settings Menu'; //for Discord Rich Presence
 
 		// for note skins and splash skins
 		notes = new FlxTypedGroup<StrumNote>();

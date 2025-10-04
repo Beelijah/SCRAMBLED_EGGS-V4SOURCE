@@ -25,10 +25,7 @@ class MainMenuState extends MusicBeatState
 
 	//Centered/Text options
 	var optionShit:Array<String> = [
-		'story_mode',
 		'freeplay',
-		#if MODS_ALLOWED 'mods', #end
-		'credits'
 	];
 
 	var leftOption:String = #if ACHIEVEMENTS_ALLOWED 'achievements' #else null #end;
@@ -46,12 +43,7 @@ class MainMenuState extends MusicBeatState
 		Mods.pushGlobalMods();
 		#end
 		Mods.loadTopMod();
-
-		#if DISCORD_ALLOWED
-		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
-		#end
-
+		
 		persistentUpdate = persistentDraw = true;
 
 		var yScroll:Float = 0.25;

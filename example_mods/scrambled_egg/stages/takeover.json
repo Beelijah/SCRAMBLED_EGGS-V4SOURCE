@@ -1,0 +1,273 @@
+{
+	"camera_boyfriend": [
+		100,
+		-100
+	],
+	"_editorMeta": {
+		"boyfriend": "egg-finale",
+		"gf": "modded-fx",
+		"dad": "tyler"
+	},
+	"preload": {
+		"images/stage_light": 2,
+		"images/stagecurtains": 2,
+		"images/stagefront": 3,
+		"images/stageback": 3
+	},
+	"girlfriend": [
+		-843,
+		-232
+	],
+	"stageUI": "",
+	"boyfriend": [
+		941,
+		114
+	],
+	"defaultZoom": 0.5,
+	"objects": [
+		{
+			"x": -1286,
+			"y": -627,
+			"scale": [
+				1,
+				1
+			],
+			"image": "takeover/FondoFondo",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bg",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				0.7,
+				0.7
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 262,
+			"y": -707,
+			"scale": [
+				1,
+				1
+			],
+			"image": "takeover/Coronation_Peach_misc_Assets",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "lightning",
+			"firstAnimation": "flash",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"animations": [
+				{
+					"offsets": null,
+					"loop": false,
+					"fps": 30,
+					"anim": "flash",
+					"indices": [],
+					"name": "AAARayo000"
+				}
+			],
+			"type": "animatedSprite"
+		},
+		{
+			"x": -1288,
+			"y": -625,
+			"scale": [
+				1,
+				1
+			],
+			"image": "takeover/Arboles",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bgground",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -1292,
+			"y": -632,
+			"scale": [
+				1,
+				1
+			],
+			"image": "takeover/AtrasArboles",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bgtrees",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -1294,
+			"y": -619,
+			"scale": [
+				1,
+				1
+			],
+			"image": "takeover/asdas",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "fgtrees",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -1300,
+			"y": -556,
+			"scale": [
+				1,
+				1
+			],
+			"image": "Starman_BG_Fire_Assets",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "fire",
+			"firstAnimation": "fire",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"animations": [
+				{
+					"offsets": null,
+					"indices": [],
+					"fps": 24,
+					"anim": "fire",
+					"loop": true,
+					"name": "fire"
+				}
+			],
+			"type": "animatedSprite"
+		},
+		{
+			"x": -1288,
+			"y": -635,
+			"scale": [
+				1,
+				1
+			],
+			"image": "takeover/Stage",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "fg",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 858,
+			"y": 689,
+			"scale": [
+				2,
+				2
+			],
+			"image": "imageres_15-1",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 20,
+			"name": "bfW",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -286,
+			"y": 672,
+			"scale": [
+				2,
+				2
+			],
+			"image": "explorer_ICO_MYCOMPUTER-1",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 340,
+			"name": "dadW",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"type": "gf"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "boyfriend"
+		}
+	],
+	"camera_girlfriend": [
+		0,
+		0
+	],
+	"camera_speed": 1,
+	"directory": "week1",
+	"opponent": [
+		-270,
+		86
+	],
+	"camera_opponent": [
+		0,
+		0
+	],
+	"hide_girlfriend": false
+}

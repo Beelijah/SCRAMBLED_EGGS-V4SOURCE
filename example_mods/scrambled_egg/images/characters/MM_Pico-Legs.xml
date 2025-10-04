@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="Pico-MM_Legs.png" width="1372" height="1188" spritePadding="3" borderPadding="1">
+	<SubTexture name="Legs0000" x="697" y="960" width="256" height="214" rotated="true" frameX="-205" frameY="-1" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0001" x="956" y="960" width="256" height="214" rotated="true" frameX="-205" frameY="-1" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0002" x="1" y="740" width="486" height="217" frameX="-66" frameY="0" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0003" x="490" y="740" width="486" height="217" frameX="-66" frameY="0" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0004" x="1" y="545" width="501" height="192" frameX="-48" frameY="-6" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0005" x="721" y="1" width="192" height="501" rotated="true" frameX="-48" frameY="-6" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0006" x="1" y="960" width="345" height="227" frameX="-133" frameY="-7" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0007" x="349" y="960" width="345" height="227" frameX="-133" frameY="-7" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0008" x="1122" y="1" width="249" height="301" rotated="true" frameX="-151" frameY="-6" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0009" x="1122" y="305" width="249" height="301" rotated="true" frameX="-151" frameY="-6" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0010" x="1" y="353" width="515" height="189" frameX="-27" frameY="-11" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0011" x="529" y="1" width="189" height="515" rotated="true" frameX="-27" frameY="-11" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0012" x="1" y="1" width="525" height="173" frameX="0" frameY="-10" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0013" x="1" y="177" width="525" height="173" frameX="0" frameY="-10" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0014" x="916" y="1" width="203" height="480" rotated="true" frameX="0" frameY="-29" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="Legs0015" x="519" y="519" width="480" height="203" frameX="0" frameY="-29" frameWidth="525" frameHeight="257"/>
+	<SubTexture name="warning" x="1002" y="484" width="100" height="100" frameX="0" frameY="0" frameWidth="100" frameHeight="100"/>
+	<SubTexture name="hidden" x="1371" y="1187" width="1" height="1" frameX="0" frameY="0" frameWidth="1" frameHeight="1"/>
+</TextureAtlas>

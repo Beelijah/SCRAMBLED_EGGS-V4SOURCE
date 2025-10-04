@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="huyIntro.png" width="3848" height="2168" spritePadding="3" borderPadding="1">
+	<SubTexture name="mp1" x="1" y="1" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="mp2" x="1284" y="1" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="mp3" x="2567" y="1" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="mp4" x="1" y="724" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="mp5" x="1284" y="724" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="mp6" x="2567" y="724" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="mp7" x="1" y="1447" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="mp8" x="1284" y="1447" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="mp9" x="2567" y="1447" width="1280" height="720" frameX="0" frameY="0" frameWidth="1280" frameHeight="720"/>
+</TextureAtlas>

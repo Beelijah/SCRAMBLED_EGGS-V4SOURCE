@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="redguy_paranoia.png" width="998" height="892">
+	<SubTexture name="altDOWN" x="1" y="663" width="322" height="228" rotated="true" frameX="-44" frameY="-9" frameWidth="302" frameHeight="368"/>
+	<SubTexture name="altLEFT" x="1" y="1" width="258" height="394" frameX="-58" frameY="-18" frameWidth="357" frameHeight="450"/>
+	<SubTexture name="altRIGHT" x="360" y="625" width="324" height="230" rotated="true" frameX="-29" frameY="-15" frameWidth="287" frameHeight="358"/>
+	<SubTexture name="altUP" x="765" y="1" width="194" height="295" frameX="-47" frameY="-18" frameWidth="263" frameHeight="331"/>
+	<SubTexture name="DOWN" x="360" y="366" width="364" height="256" rotated="true" frameX="-40" frameY="-17" frameWidth="343" frameHeight="418"/>
+	<SubTexture name="IDLE" x="1" y="398" width="356" height="262" rotated="true" frameX="-32" frameY="-17" frameWidth="340" frameHeight="393"/>
+	<SubTexture name="LEFT" x="531" y="1" width="231" height="339" frameX="-26" frameY="-21" frameWidth="296" frameHeight="396"/>
+	<SubTexture name="RIGHT" x="687" y="625" width="310" height="213" rotated="true" frameX="-23" frameY="-15" frameWidth="261" frameHeight="351"/>
+	<SubTexture name="UP" x="262" y="1" width="266" height="362" frameX="-39" frameY="-16" frameWidth="356" frameHeight="411"/>
+</TextureAtlas>

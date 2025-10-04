@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="egg-finale.png" width="1399" height="1602" spritePadding="3" borderPadding="1">
+	<SubTexture name="idle" x="960" y="406" width="272" height="400" frameX="-114" frameY="-100" frameWidth="500" frameHeight="500"/>
+</TextureAtlas>

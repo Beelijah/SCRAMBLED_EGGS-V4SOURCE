@@ -1,0 +1,207 @@
+{
+	"camera_boyfriend": [
+		0,
+		0
+	],
+	"_editorMeta": {
+		"boyfriend": "chat_red",
+		"gf": "gf",
+		"dad": "chat_egg"
+	},
+	"preload": {
+		"images/stage_light": 2,
+		"images/stagecurtains": 2,
+		"images/stagefront": 3,
+		"images/stageback": 3
+	},
+	"girlfriend": [
+		400,
+		130
+	],
+	"stageUI": "",
+	"boyfriend": [
+		910,
+		125
+	],
+	"defaultZoom": 0.6,
+	"objects": [
+		{
+			"type": "gf"
+		},
+		{
+			"x": 523,
+			"y": 167,
+			"scale": [
+				0.77,
+				0.77
+			],
+			"image": "discord/greenbg",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "redTalk",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 535,
+			"y": 175,
+			"scale": [
+				0.75,
+				0.75
+			],
+			"image": "discord/redguybg",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "redbg",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -328,
+			"y": 33,
+			"scale": [
+				0.76,
+				0.77
+			],
+			"image": "discord/greenbg",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "eggTalk",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				0,
+				0
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -453,
+			"y": 142,
+			"scale": [
+				0.75,
+				0.75
+			],
+			"image": "discord/eggbg",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "eggbg",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"type": "boyfriend"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"x": -558,
+			"y": 287,
+			"scale": [
+				3,
+				3
+			],
+			"image": "discord/discord-muted",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bgMuted",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -558,
+			"y": 287,
+			"scale": [
+				3,
+				3
+			],
+			"image": "discord/discord",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bg",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 131,
+			"y": -1400,
+			"scale": [
+				1,
+				1
+			],
+			"image": "tut",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "tutorial",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		}
+	],
+	"camera_girlfriend": [
+		0,
+		0
+	],
+	"camera_speed": 1,
+	"directory": "week1",
+	"opponent": [
+		322,
+		356
+	],
+	"camera_opponent": [
+		0,
+		0
+	],
+	"hide_girlfriend": true
+}

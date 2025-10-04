@@ -1,0 +1,79 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [0, 2],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, -1],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 5],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-36, -204],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 22,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"loop": false,
+			"offsets": [500, 300],
+			"anim": "lets",
+			"fps": 1,
+			"name": "lets",
+			"indices": []
+		},
+		{
+			"offsets": [500, 300],
+			"loop": false,
+			"fps": 1,
+			"anim": "go",
+			"indices": [],
+			"name": "go"
+		},
+		{
+			"loop": true,
+			"offsets": [725, 515],
+			"anim": "finish",
+			"fps": 1,
+			"name": "black",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/millie",
+	"position": [110, 320],
+	"healthicon": "millie",
+	"flip_x": true,
+	"healthbar_colors": [255, 0, 0],
+	"camera_position": [-110, 110],
+	"sing_duration": 4,
+	"scale": 2,
+	"_editor_isPlayer": true
+}

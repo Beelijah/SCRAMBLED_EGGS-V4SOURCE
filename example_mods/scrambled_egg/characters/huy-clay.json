@@ -1,0 +1,63 @@
+{
+	"animations": [
+		{
+			"offsets": [2, 5],
+			"loop": false,
+			"fps": 20,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [37, -12],
+			"loop": false,
+			"fps": 20,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [-33, 45],
+			"loop": false,
+			"fps": 20,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "idle",
+			"fps": 20,
+			"name": "idle",
+			"indices": [1, 3]
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 20,
+			"anim": "transition",
+			"indices": [2, 3, 4, 6, 10, 11, 12, 13, 14, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16],
+			"name": "transition"
+		},
+		{
+			"loop": false,
+			"offsets": [3, -7],
+			"anim": "singDOWN",
+			"fps": 20,
+			"name": "down",
+			"indices": [0, 1]
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": true,
+	"image": "characters/huy-clay",
+	"position": [70, 380],
+	"healthicon": "huy-clay",
+	"flip_x": true,
+	"healthbar_colors": [255, 255, 255],
+	"camera_position": [0, -10],
+	"sing_duration": 4,
+	"scale": 1.2,
+	"_editor_isPlayer": false
+}

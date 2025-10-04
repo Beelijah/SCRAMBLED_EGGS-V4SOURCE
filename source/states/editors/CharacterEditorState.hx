@@ -714,7 +714,6 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 				var lastIcon = healthIcon.getCharacter();
 				healthIcon.changeIcon(healthIconInputText.text, false);
 				character.healthIcon = healthIconInputText.text;
-				if(lastIcon != healthIcon.getCharacter()) updatePresence();
 				unsavedProgress = true;
 			}
 			else if(sender == vocalsInputText)
@@ -1128,14 +1127,9 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 		healthColorStepperB.value = character.healthColorArray[2];
 		healthBar.leftBar.color = healthBar.rightBar.color = FlxColor.fromRGB(character.healthColorArray[0], character.healthColorArray[1], character.healthColorArray[2]);
 		healthIcon.changeIcon(character.healthIcon, false);
-		updatePresence();
 	}
 
 	inline function updatePresence() {
-		#if DISCORD_ALLOWED
-		// Updating Discord Rich Presence
-		DiscordClient.changePresence("Character Editor", "Character: " + _char, healthIcon.getCharacter());
-		#end
 	}
 
 	inline function reloadAnimList()

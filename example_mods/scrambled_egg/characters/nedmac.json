@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 20,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [7, 50],
+			"loop": false,
+			"fps": 20,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [6, 19],
+			"loop": false,
+			"fps": 20,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"loop": false,
+			"offsets": [129, 28],
+			"anim": "singLEFT",
+			"fps": 20,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [4, 21],
+			"anim": "singRIGHT",
+			"fps": 20,
+			"name": "left",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/nedmac-sizefix",
+	"position": [60, 70],
+	"healthicon": "nedmac3",
+	"flip_x": true,
+	"healthbar_colors": [255, 255, 255],
+	"camera_position": [-20, 0],
+	"sing_duration": 4,
+	"scale": 1.2,
+	"_editor_isPlayer": false
+}

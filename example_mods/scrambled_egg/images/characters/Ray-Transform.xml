@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="Ray-Transform.png" width="1673" height="1612" spritePadding="3" borderPadding="1">
+	<SubTexture name="transition0" x="1" y="1" width="464" height="267" frameX="-12" frameY="-209" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition1" x="1" y="271" width="460" height="263" frameX="-14" frameY="-211" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition10" x="921" y="429" width="403" height="201" frameX="-42" frameY="-240" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition11" x="857" y="781" width="377" height="175" frameX="-55" frameY="-253" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition12" x="1" y="1026" width="371" height="169" frameX="-58" frameY="-256" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition13" x="375" y="1026" width="365" height="163" frameX="-61" frameY="-259" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition14" x="743" y="1015" width="359" height="157" frameX="-64" frameY="-262" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition15" x="1" y="1198" width="353" height="151" frameX="-67" frameY="-265" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition16" x="887" y="633" width="347" height="145" frameX="-70" frameY="-268" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition17" x="357" y="1198" width="341" height="133" frameX="-73" frameY="-274" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition18" x="701" y="1192" width="333" height="128" frameX="-77" frameY="-278" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition19" x="1347" y="1" width="325" height="128" frameX="-81" frameY="-282" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition2" x="468" y="1" width="456" height="261" frameX="-16" frameY="-211" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition20" x="1347" y="132" width="319" height="128" frameX="-84" frameY="-285" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition21" x="1339" y="263" width="310" height="128" frameX="-90" frameY="-288" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition22" x="1339" y="394" width="304" height="128" frameX="-93" frameY="-291" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition23" x="1037" y="1175" width="298" height="128" frameX="-96" frameY="-294" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition24" x="1338" y="525" width="290" height="128" frameX="-100" frameY="-298" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition25" x="1338" y="656" width="282" height="128" frameX="-104" frameY="-302" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition26" x="1338" y="787" width="274" height="128" frameX="-108" frameY="-306" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition27" x="1338" y="918" width="266" height="128" frameX="-112" frameY="-310" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition28" x="1338" y="1049" width="258" height="128" frameX="-116" frameY="-314" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition29" x="1338" y="1180" width="250" height="128" frameX="-120" frameY="-318" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition3" x="468" y="265" width="450" height="255" frameX="-19" frameY="-214" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition30" x="1" y="1352" width="242" height="128" frameX="-124" frameY="-322" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition31" x="246" y="1352" width="234" height="128" frameX="-128" frameY="-326" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition32" x="1105" y="959" width="226" height="128" frameX="-132" frameY="-326" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition33" x="483" y="1334" width="218" height="128" frameX="-136" frameY="-330" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition34" x="704" y="1323" width="210" height="128" frameX="-140" frameY="-335" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition35" x="917" y="1323" width="197" height="128" frameX="-150" frameY="-338" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition36" x="1117" y="1306" width="187" height="128" frameX="-155" frameY="-338" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition37" x="1307" y="1311" width="177" height="128" frameX="-160" frameY="-338" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition38" x="1487" y="1311" width="169" height="128" frameX="-164" frameY="-338" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition39" x="1" y="1483" width="161" height="128" frameX="-168" frameY="-338" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition4" x="1" y="537" width="444" height="249" frameX="-22" frameY="-217" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition40" x="165" y="1483" width="153" height="128" frameX="-172" frameY="-338" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition41" x="321" y="1483" width="143" height="128" frameX="-177" frameY="-338" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition42" x="467" y="1483" width="128" height="128" frameX="-187" frameY="-338" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition5" x="448" y="537" width="436" height="241" frameX="-26" frameY="-221" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition6" x="1" y="789" width="425" height="234" frameX="-31" frameY="-223" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition7" x="429" y="789" width="425" height="223" frameX="-31" frameY="-229" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition8" x="927" y="1" width="417" height="215" frameX="-35" frameY="-233" frameWidth="500" frameHeight="500"/>
+	<SubTexture name="transition9" x="927" y="219" width="409" height="207" frameX="-39" frameY="-237" frameWidth="500" frameHeight="500"/>
+</TextureAtlas>

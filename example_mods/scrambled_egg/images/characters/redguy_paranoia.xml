@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="YouCannotBeatUS_BF_Assets.png" width="1443" height="1436">
+	<SubTexture name="Cheer0001" x="715.5" y="720" width="346.5" height="714" frameX="-213" frameY="-40.5" frameWidth="966" frameHeight="867"/>
+	<SubTexture name="Idle0001" x="919.5" y="1.5" width="349.5" height="714" frameX="-129" frameY="-73.5" frameWidth="739.5" frameHeight="823.5"/>
+	<SubTexture name="SingDOWN0001" x="1066.5" y="720" width="375" height="583.5" frameX="-46.5" frameY="-24" frameWidth="696" frameHeight="618"/>
+	<SubTexture name="SingLEFT0001" x="1.5" y="1.5" width="499.5" height="712.5" frameX="-120" frameY="-3" frameWidth="846" frameHeight="796.5"/>
+	<SubTexture name="SingRIGHT0001" x="1.5" y="720" width="709.5" height="399" rotated="true" frameX="-123" frameY="-21" frameWidth="663" frameHeight="799.5"/>
+	<SubTexture name="SingUP0001" x="505.5" y="1.5" width="409.5" height="714" frameX="-69" frameY="-70.5" frameWidth="607.5" frameHeight="856.5"/>
+</TextureAtlas>

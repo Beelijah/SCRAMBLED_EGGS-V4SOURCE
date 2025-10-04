@@ -1,0 +1,95 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [47, -94],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "SingDOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-50, -100],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "SingRIGHT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-112, -54],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "SingUP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [54, -111],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "SingLEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "idle-alt",
+			"fps": 24,
+			"name": "Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [47, -94],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "SingDOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-50, -100],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "SingRIGHT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-112, -54],
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "SingUP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [54, -111],
+			"anim": "singLEFT-alt",
+			"fps": 24,
+			"name": "SingLEFT",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": true,
+	"image": "characters/redguy_paranoia",
+	"position": [-140, 290],
+	"healthicon": "chat_red",
+	"flip_x": false,
+	"healthbar_colors": [153, 0, 0],
+	"camera_position": [-100, -20],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

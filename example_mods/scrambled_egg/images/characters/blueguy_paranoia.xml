@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="YouCannotBeatUS_DuckHunt.png" width="1710" height="1282">
+	<SubTexture name="down" x="2" y="758" width="750" height="522" rotated="true" frameX="-0" frameY="-0" frameWidth="522" frameHeight="750"/>
+	<SubTexture name="idle" x="758" y="758" width="750" height="522" rotated="true" frameX="-0" frameY="-0" frameWidth="522" frameHeight="750"/>
+	<SubTexture name="left" x="632" y="2" width="548" height="750" frameX="-0" frameY="-0" frameWidth="548" frameHeight="750"/>
+	<SubTexture name="right" x="2" y="2" width="624" height="750" frameX="-0" frameY="-0" frameWidth="624" frameHeight="750"/>
+	<SubTexture name="up" x="1186" y="2" width="522" height="750" frameX="-0" frameY="-0" frameWidth="522" frameHeight="750"/>
+</TextureAtlas>

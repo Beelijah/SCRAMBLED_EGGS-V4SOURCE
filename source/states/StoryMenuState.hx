@@ -52,11 +52,6 @@ class StoryMenuState extends MusicBeatState
 		PlayState.isStoryMode = true;
 		WeekData.reloadWeekFiles(true);
 
-		#if DISCORD_ALLOWED
-		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
-		#end
-
 		if(WeekData.weeksList.length < 1)
 		{
 			FlxTransitionableState.skipNextTransIn = true;
@@ -360,11 +355,7 @@ class StoryMenuState extends MusicBeatState
 				#if !SHOW_LOADING_SCREEN FlxG.sound.music.stop(); #end
 				LoadingState.loadAndSwitchState(new PlayState(), true);
 				FreeplayState.destroyFreeplayVocals();
-			});
-			
-			#if (MODS_ALLOWED && DISCORD_ALLOWED)
-			DiscordClient.loadModRPC();
-			#end
+			});			
 		}
 		else FlxG.sound.play(Paths.sound('cancelMenu'));
 	}

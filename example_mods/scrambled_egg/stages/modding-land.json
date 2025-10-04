@@ -1,0 +1,229 @@
+{
+	"camera_boyfriend": [
+		0,
+		0
+	],
+	"preload": {
+		"images/stageback": 3,
+		"images/stagefront": 3,
+		"images/stagecurtains": 2,
+		"images/stage_light": 2
+	},
+	"_editorMeta": {
+		"boyfriend": "redguy-pixel",
+		"dad": "huy-pixel-clay",
+		"gf": "gf"
+	},
+	"boyfriend": [
+		770,
+		100
+	],
+	"stageUI": "pixel",
+	"girlfriend": [
+		400,
+		130
+	],
+	"camera_girlfriend": [
+		0,
+		0
+	],
+	"defaultZoom": 0.62,
+	"objects": [
+		{
+			"x": -941,
+			"y": -569,
+			"scale": [
+				9,
+				9
+			],
+			"image": "4",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bg",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -941,
+			"y": -560,
+			"scale": [
+				9,
+				9
+			],
+			"image": "3",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bg2",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -941,
+			"y": -642,
+			"scale": [
+				9.25,
+				9.25
+			],
+			"image": "2",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "floor",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -941,
+			"y": -567,
+			"scale": [
+				9,
+				9
+			],
+			"image": "evil4",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "EVILbg",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -941,
+			"y": -560,
+			"scale": [
+				9,
+				9
+			],
+			"image": "evil3",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "EVILbg2",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -941,
+			"y": -642,
+			"scale": [
+				9,
+				9
+			],
+			"image": "evil2",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "EVILfloor",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"type": "gf"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "boyfriend"
+		},
+		{
+			"x": -620,
+			"y": -556,
+			"scale": [
+				1.62,
+				1.62
+			],
+			"image": "4by3",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "border",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				0,
+				0
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -676,
+			"y": -166,
+			"scale": [
+				1,
+				1
+			],
+			"image": "eye",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "eye",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		}
+	],
+	"opponent": [
+		100,
+		100
+	],
+	"directory": "week1",
+	"camera_speed": 1,
+	"hide_girlfriend": true,
+	"camera_opponent": [
+		0,
+		0
+	]
+}

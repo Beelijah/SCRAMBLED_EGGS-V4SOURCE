@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="chat_egg.png" width="961" height="661">
+	<SubTexture name="down" x="626" y="1" width="334" height="364" rotated="true" frameX="-132" frameY="-57" frameWidth="736" frameHeight="392"/>
+	<SubTexture name="idle" x="373" y="376" width="346" height="243" rotated="true" frameX="-122" frameY="-109" frameWidth="453" frameHeight="475"/>
+	<SubTexture name="left" x="274" y="1" width="349" height="372" frameX="-23" frameY="-46" frameWidth="455" frameHeight="464"/>
+	<SubTexture name="right" x="1" y="377" width="369" height="283" rotated="true" frameX="-93" frameY="-65" frameWidth="459" frameHeight="476"/>
+	<SubTexture name="up" x="1" y="1" width="270" height="373" frameX="-109" frameY="-38" frameWidth="433" frameHeight="495"/>
+</TextureAtlas>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="egg-bars.png" width="999" height="1481" spritePadding="3" borderPadding="1">
+	<SubTexture name="down" x="321" y="773" width="314" height="679" frameX="-29" frameY="0" frameWidth="314" frameHeight="679"/>
+	<SubTexture name="idle" x="347" y="1" width="347" height="760" frameX="-27" frameY="0" frameWidth="347" frameHeight="760"/>
+	<SubTexture name="left" x="697" y="1" width="301" height="707" frameX="-18" frameY="0" frameWidth="301" frameHeight="707"/>
+	<SubTexture name="up" x="1" y="773" width="317" height="707" frameX="-23" frameY="0" frameWidth="317" frameHeight="707"/>
+	<SubTexture name="right_replacement2-FINAL" x="1" y="1" width="343" height="769" frameX="-27" frameY="-2" frameWidth="389" frameHeight="772"/>
+</TextureAtlas>

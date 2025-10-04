@@ -1,0 +1,27 @@
+{
+	"storyName": "the",
+	"difficulties": "Hard",
+	"hideFreeplay": false,
+	"weekBackground": "none",
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"scrambled-screen",
+			"egg",
+			[
+				55,
+				193,
+				133
+			]
+		]
+	],
+	"weekCharacters": [
+		"appa",
+		"ray",
+		"blythe"
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "eggV2"
+}

@@ -1,0 +1,2 @@
+texture = "noteSkins/Pico-White_NOTE_assets"
+hitsound = "confirmMenu"

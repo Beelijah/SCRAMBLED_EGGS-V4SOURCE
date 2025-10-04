@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 20,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [156, 283],
+			"loop": false,
+			"fps": 20,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [32, 316],
+			"loop": false,
+			"fps": 20,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [67, 364],
+			"loop": false,
+			"fps": 20,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [70, 314],
+			"loop": false,
+			"fps": 20,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": true,
+	"image": "characters/huy-finale0",
+	"position": [-70, 230],
+	"healthicon": "huy",
+	"flip_x": false,
+	"healthbar_colors": [0, 75, 255],
+	"camera_position": [-60, -120],
+	"sing_duration": 4,
+	"scale": 1.2,
+	"_editor_isPlayer": false
+}

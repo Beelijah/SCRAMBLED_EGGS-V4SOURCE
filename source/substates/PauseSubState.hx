@@ -1,13 +1,18 @@
 package substates;
 
+import backend.Paths;
 import backend.WeekData;
 import backend.Highscore;
 import backend.Song;
+
+import sys.io.File;
 
 import flixel.util.FlxStringUtil;
 
 import states.StoryMenuState;
 import states.FreeplayState;
+import states.PlayState;
+import states.LoadingState;
 import options.OptionsState;
 
 class PauseSubState extends MusicBeatSubstate
@@ -315,22 +320,8 @@ class PauseSubState extends MusicBeatSubstate
 						FlxG.sound.music.time = pauseMusic.time;
 					}
 					OptionsState.onPlayState = true;
-				case "Exit to menu":
-					#if DISCORD_ALLOWED DiscordClient.resetClientID(); #end
-					PlayState.deathCounter = 0;
-					PlayState.seenCutscene = false;
-
-					PlayState.instance.canResync = false;
-					Mods.loadTopMod();
-					if(PlayState.isStoryMode)
-						MusicBeatState.switchState(new StoryMenuState());
-					else 
-						MusicBeatState.switchState(new FreeplayState());
-
-					FlxG.sound.playMusic(Paths.music('freakyMenu'));
-					PlayState.changedDifficulty = false;
-					PlayState.chartingMode = false;
-					FlxG.camera.followLerp = 0;
+				case "Exit to menu": // i hate haxe so much, this worked so well until it didn't
+					FlxG.switchState(new FreeplayState());
 			}
 		}
 	}

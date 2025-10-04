@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="nedmaC.png" width="2349" height="2138" spritePadding="0" borderPadding="1">
+	<SubTexture name="down1" x="1" y="1" width="457" height="744" frameX="-29" frameY="-33" frameWidth="492" frameHeight="782"/>
+	<SubTexture name="down2" x="1" y="745" width="445" height="743" frameX="-36" frameY="-33" frameWidth="492" frameHeight="782"/>
+	<SubTexture name="down3" x="458" y="1" width="457" height="744" frameX="-29" frameY="-33" frameWidth="492" frameHeight="782"/>
+	<SubTexture name="idle1" x="1402" y="725" width="372" height="649" frameX="-7" frameY="-17" frameWidth="384" frameHeight="670"/>
+	<SubTexture name="idle2" x="446" y="745" width="376" height="651" frameX="-5" frameY="-16" frameWidth="384" frameHeight="670"/>
+	<SubTexture name="idle3" x="1" y="1488" width="372" height="649" frameX="-7" frameY="-17" frameWidth="384" frameHeight="670"/>
+	<SubTexture name="left1" x="1889" y="1" width="459" height="618" frameX="-6" frameY="-35" frameWidth="471" frameHeight="658"/>
+	<SubTexture name="left2" x="1889" y="619" width="459" height="618" frameX="-4" frameY="-36" frameWidth="471" frameHeight="658"/>
+	<SubTexture name="left3" x="1882" y="1237" width="459" height="618" frameX="-6" frameY="-35" frameWidth="471" frameHeight="658"/>
+	<SubTexture name="right1" x="373" y="1488" width="485" height="649" frameX="-18" frameY="-41" frameWidth="507" frameHeight="694"/>
+	<SubTexture name="right2" x="1402" y="1374" width="480" height="649" frameX="-24" frameY="-42" frameWidth="507" frameHeight="694"/>
+	<SubTexture name="right3" x="858" y="1453" width="485" height="649" frameX="-18" frameY="-41" frameWidth="507" frameHeight="694"/>
+	<SubTexture name="up1" x="915" y="1" width="487" height="726" frameX="-34" frameY="-21" frameWidth="527" frameHeight="752"/>
+	<SubTexture name="up2" x="1402" y="1" width="487" height="724" frameX="-36" frameY="-22" frameWidth="527" frameHeight="752"/>
+	<SubTexture name="up3" x="915" y="727" width="487" height="726" frameX="-34" frameY="-21" frameWidth="527" frameHeight="752"/>
+</TextureAtlas>

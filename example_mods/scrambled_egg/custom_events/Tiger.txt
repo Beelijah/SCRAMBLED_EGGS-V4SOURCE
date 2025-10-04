@@ -1,0 +1,2 @@
+Value 1: how fast should tiger move across the screen in seconds
+Value 2: blank for forward, "1" for backward

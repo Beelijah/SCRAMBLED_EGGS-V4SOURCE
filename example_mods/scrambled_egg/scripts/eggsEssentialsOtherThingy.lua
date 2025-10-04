@@ -1,0 +1,5 @@
+--function onCreate()
+--    setPropertyFromClass('openfl.Lib', 'application.window.title', 'egg man')
+--
+--    debugPrint('                ' .. getPropertyFromClass('openfl.Lib', 'application.window.parameters'))
+--end

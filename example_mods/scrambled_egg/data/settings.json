@@ -1,0 +1,9 @@
+[
+	{
+		"save": "takeoverFxEnabled",
+		"name": "Takeover Window Effects",
+		"type": "bool",
+		"description": "Enables or Disables the Window effects for Takeover.",
+		"value": true
+	}
+]

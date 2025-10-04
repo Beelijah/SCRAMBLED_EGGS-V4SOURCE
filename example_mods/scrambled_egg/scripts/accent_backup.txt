@@ -1,0 +1,8 @@
+
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM
+    AccentColor    REG_DWORD    0xff6acc00
+
+
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM
+    ColorPrevalence    REG_DWORD    0x0
+

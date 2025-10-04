@@ -1,0 +1,58 @@
+[
+	{
+		"save": "hasBeatDebate",
+		"name": "Situation Sorted.",
+		"description": "Complete Debate."
+	},
+	{
+		"save": "hasBeatParanoiaEGG",
+		"name": "Should I Run A Virus Scan?",
+		"description": "Complete Paranoia."
+	},
+	{
+		"save": "hasBeatCatOverdone",
+		"name": "'Whoops!'",
+		"description": "Complete Cat Overdone."
+	},
+	{
+		"save": "hasBeatCatOverdue",
+		"name": "'What the FUCK is that thing?!'",
+		"description": "Complete Cat Overdue."
+	},
+	{
+		"save": "hasBeatModdingLand",
+		"name": "It is now a federal crime to mod Friday Night Funkin.",
+		"description": "Complete Modding Land."
+	},
+	{
+		"save": "hasBeatNoModding",
+		"name": "Modding is no Funkin!",
+		"description": "Complete No Modding."
+	},
+	{
+		"save": "hasBeatGoodFriends",
+		"name": "Great Friends",
+		"description": "Complete Good Friends."
+	},
+	{
+		"save": "hasBeatFinale",
+		"name": "The Final Showdown",
+		"description": "Complete Finale."
+	},
+	{
+		"save": "lovesScrambledEggs25",
+		"name": "I Love Scrambled Eggs",
+		"description": "Finish 5 songs in the scrambled eggs mod.",
+		"maxScore": 5,
+		"maxDecimals": 0,
+		"hidden": false
+	},
+	{
+		"save": "hasBeatScrambledEggs25",
+		"name": "Finish it all.",
+		"description": "Finish every song in the scrambled eggs mod.",
+		"maxScore": 8,
+		"maxDecimals": 0,
+		"hidden": false
+	}
+]

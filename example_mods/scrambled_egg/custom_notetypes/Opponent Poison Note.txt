@@ -1,0 +1,3 @@
+texture = "noteSkins/poisonNote"
+noteSplashData.texture = 'noteSkins/poisonNote_notesplashes'
+hitsound = "confirmMenu"

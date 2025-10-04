@@ -1,0 +1,39 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [37, 11],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "death-happy",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [37, 11],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "death-dead",
+			"indices": []
+		},
+		{
+			"offsets": [37, 11],
+			"indices": [],
+			"fps": 24,
+			"anim": "firstDeath",
+			"loop": false,
+			"name": "death-dead"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": true,
+	"image": "characters/redguyDead",
+	"position": [180, 470],
+	"healthicon": "chat_red",
+	"flip_x": true,
+	"healthbar_colors": [49, 176, 209],
+	"camera_position": [0, 0],
+	"sing_duration": 4,
+	"scale": 2.5,
+	"_editor_isPlayer": true
+}

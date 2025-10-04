@@ -1,0 +1,3 @@
+texture = "noteSkins/ringNotes"
+noteSplashData.texture = 'noteSkins/Bullet_NOTE_assets_notesplashes'
+hitsound = "confirmMenu"

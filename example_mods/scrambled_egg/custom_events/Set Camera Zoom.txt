@@ -1,0 +1,6 @@
+Value 1: how far should it be zoomed
+Value 2: how long it should take
+
+to get it back to normal run this event again but instead:
+set value 1 to your default zoom (can be found in stage editor)
+set value 2 to "-1"

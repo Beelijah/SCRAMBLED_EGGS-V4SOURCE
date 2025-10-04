@@ -1,0 +1,63 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 20,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [4, 0],
+			"loop": false,
+			"fps": 20,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [-10, 45],
+			"loop": false,
+			"fps": 20,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [-48, 0],
+			"loop": false,
+			"fps": 20,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [14, 36],
+			"loop": false,
+			"fps": 20,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"loop": false,
+			"offsets": [-100, 0],
+			"anim": "dodge",
+			"fps": 20,
+			"name": "dodge",
+			"indices": [1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0]
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/egg-finale",
+	"position": [-30, 160],
+	"healthicon": "egg-finale",
+	"flip_x": true,
+	"healthbar_colors": [255, 255, 255],
+	"camera_position": [340, -20],
+	"sing_duration": 4,
+	"scale": 1.5,
+	"_editor_isPlayer": true
+}

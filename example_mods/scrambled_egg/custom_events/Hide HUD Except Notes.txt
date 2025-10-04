@@ -1,0 +1,2 @@
+Value 1: "1" to hide, "0" to unhide.
+Value 2: duration of fade

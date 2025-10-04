@@ -1,0 +1,4 @@
+Value 1: this is where you put the number
+Value 2: duration
+
+"0" is normal. "1" is half notes down, "2" is other half down, "3" is spread apart notes, "4" is really spread apart notes, "5" is hide opponent notes, "6" is show opponent notes, "7" is make the notes jump every beat, "8" is disable notes jumping.
