@@ -43,10 +43,10 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		var option:GameplayOption = new GameplayOption('Playback Rate', 'songspeed', FLOAT, 1);
 		option.scrollSpeed = 1;
 		option.minValue = 0.5;
-		option.maxValue = 3.0;
-		option.changeValue = 0.05;
+		option.maxValue = 25.0;
+		option.changeValue = 0.1;
 		option.displayFormat = '%vX';
-		option.decimals = 2;
+		option.decimals = 1;
 		optionsArray.push(option);
 		#end
 
