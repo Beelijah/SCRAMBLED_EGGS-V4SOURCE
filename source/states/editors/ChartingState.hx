@@ -85,7 +85,8 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 		['Change Scroll Speed', "Value 1: Scroll Speed Multiplier (1 is default)\nValue 2: Time it takes to change fully in seconds."],
 		['Set Property', "Value 1: Variable name\nValue 2: New value"],
 		['Play Sound', "Value 1: Sound file name\nValue 2: Volume (Default: 1), ranges from 0 to 1"],
-		['Open Options Menu', "Value 1: Using this event will swap states to the options menu.\nSource Code event by scrambled_egg3"]
+		['Open Options Menu', "Using this event will swap states to the options menu.\nSource Code event by scrambled_egg3"], // does anyone else forget the commas
+		['Open Gameplay Changers Menu', "Using this event will add the gameplay changers menu.\nSource Code event by scrambled_egg3"]
 	];
 	
 	public static var keysArray:Array<FlxKey> = [ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT]; //Used for Vortex Editor

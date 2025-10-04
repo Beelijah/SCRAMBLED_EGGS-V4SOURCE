@@ -18,7 +18,8 @@ import lime.utils.Assets;
 import openfl.utils.Assets as OpenFlAssets;
 import openfl.events.KeyboardEvent;
 import haxe.Json;
-import options.OptionsState; // whoops almost forgot to import this
+import options.GameplayChangersSubstate; // whoops almost forgot to import these
+import options.OptionsState;
 
 import cutscenes.DialogueBoxPsych;
 
@@ -2265,6 +2266,9 @@ class PlayState extends MusicBeatState
 					opponentVocals.pause();
 
 				MusicBeatState.switchState(new OptionsState());
+
+			case 'Open Gameplay Changers Menu': // corresponds to another custom source event i made
+				openSubState(new GameplayChangersSubstate()); // no this is not copied and pasted from the MasterEditorMenu thing i made earlier
 		}
 
 		stagesFunc(function(stage:BaseStage) stage.eventCalled(eventName, value1, value2, flValue1, flValue2, strumTime));
