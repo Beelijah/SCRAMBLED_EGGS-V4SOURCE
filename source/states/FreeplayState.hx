@@ -108,7 +108,7 @@ class FreeplayState extends MusicBeatState
 
 		for (i in 0...songs.length)
 		{
-			var songText:Alphabet = new Alphabet(90, 320, songs[i].songName, true);
+			var songText:Alphabet = new Alphabet(90, 99999, songs[i].songName, true);
 			songText.targetY = i;
 			grpSongs.add(songText);
 
