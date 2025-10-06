@@ -1,2 +1,0 @@
-lime test mac
-pause
