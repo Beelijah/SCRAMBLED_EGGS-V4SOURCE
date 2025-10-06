@@ -1,0 +1,203 @@
+{
+	"events": [
+		[
+			0,
+			[
+				["Toggle Health Drain", "0", ""]
+			]
+		],
+		[
+			78.9473684210526,
+			[
+				["Hide HUD", "0", "0.1"]
+			]
+		],
+		[
+			20210.5263157895,
+			[
+				["Hide HUD", "1", "1"]
+			]
+		],
+		[
+			21394.7368421053,
+			[
+				["Toggle Health Drain", "1", ""]
+			]
+		],
+		[
+			21473.6842105263,
+			[
+				["Change Character", "Dad", "ray-evil"]
+			]
+		],
+		[
+			21473.6842105264,
+			[
+				["Play Animation", "transition", "Dad"]
+			]
+		],
+		[
+			21476.8092105263,
+			[
+				["Change Character", "BF", "pico-MM_Phase2"]
+			]
+		],
+		[
+			21476.8914473684,
+			[
+				["Change Character", "BF", "Pico-MM_Phase2"]
+			]
+		],
+		[
+			21476.9736842105,
+			[
+				["Play Animation", "Dialogue1", "BF"]
+			]
+		],
+		[
+			21480.2631578947,
+			[
+				["Play Animation", "Transition", "Dad"]
+			]
+		],
+		[
+			22973.6842105263,
+			[
+				["Screen Shake", "0.2, 0.01", "0.2, 0.005"]
+			]
+		],
+		[
+			24000,
+			[
+				["Hide HUD", "0", "1"]
+			]
+		],
+		[
+			42789.4736842105,
+			[
+				["Hide HUD", "1", "1"]
+			]
+		],
+		[
+			42947.3684210526,
+			[
+				["Play Animation", "Dialogue2", "BF"]
+			]
+		],
+		[
+			44131.5789473684,
+			[
+				["Play Animation", "shoot", "BF"]
+			]
+		],
+		[
+			44210.5263157895,
+			[
+				["Hide HUD", "0", "1"]
+			]
+		],
+		[
+			73421.0526315789,
+			[
+				["Hide HUD", "0", "0.1"]
+			]
+		],
+		[
+			149921.052631579,
+			[
+				["Hide HUD", "0", "0.1"]
+			]
+		],
+		[
+			150315.789473684,
+			[
+				["Hide HUD Except Notes", "1", "10"]
+			]
+		],
+		[
+			170368.421052632,
+			[
+				["Hide HUD", "1", "1"]
+			]
+		],
+		[
+			170516.447368421,
+			[
+				["Screen Shake", "40, 0.001", "40, 0.001"]
+			]
+		],
+		[
+			170519.736842105,
+			[
+				["Play Animation", "jump", "Dad"]
+			]
+		],
+		[
+			170523.02631579,
+			[
+				["Change Character", "BF", "pico-MM_Phase3"]
+			]
+		],
+		[
+			170526.315789474,
+			[
+				["Play Animation", "Dialogue3", "BF"]
+			]
+		],
+		[
+			170605.263157895,
+			[
+				["Toggle Health Drain", "0", "1.5"]
+			]
+		],
+		[
+			171710.52631579,
+			[
+				["Hide HUD", "0", "1"]
+			]
+		],
+		[
+			171782.894736842,
+			[
+				["Change Character", "Dad", "ray-evil-run"]
+			]
+		],
+		[
+			171786.184210527,
+			[
+				["Play Animation", "run", "GF"]
+			]
+		],
+		[
+			171789.473684211,
+			[
+				["Play Animation", "idle", "BF"]
+			]
+		],
+		[
+			212210.52631579,
+			[
+				["Hide HUD", "1", "1"]
+			]
+		],
+		[
+			213947.368421053,
+			[
+				["Play Animation", "Dialogue4", "BF"]
+			]
+		],
+		[
+			216631.578947369,
+			[
+				["Transition To Boss", "1.5", ""]
+			]
+		],
+		[
+			216947.368421053,
+			[
+				["Play Animation", "Dialogue4End", "BF"]
+			]
+		]
+	],
+	"format": "psych_v1"
+}

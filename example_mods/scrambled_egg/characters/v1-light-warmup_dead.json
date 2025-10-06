@@ -1,0 +1,39 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "finish",
+			"indices": []
+		},
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 50,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "spincat"
+		},
+		{
+			"offsets": [-60, -70],
+			"indices": [],
+			"fps": 10,
+			"anim": "firstDeath",
+			"loop": false,
+			"name": "laugh"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/lightwarmup-death-v1",
+	"position": [770, 300],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [49, 176, 209],
+	"camera_position": [0, 70],
+	"sing_duration": 4,
+	"scale": 4,
+	"_editor_isPlayer": false
+}

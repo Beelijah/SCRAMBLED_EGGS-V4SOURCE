@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="egg-mc.png" width="2068" height="1356" spritePadding="0" borderPadding="0">
+	<SubTexture name="down1" x="375" y="683" width="351" height="671" frameX="-820" frameY="-208" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="down2" x="0" y="683" width="375" height="673" frameX="-805" frameY="-206" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle" x="726" y="682" width="291" height="671" frameX="-852" frameY="-214" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="left1" x="1244" y="0" width="463" height="668" frameX="-721" frameY="-217" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="left2" x="781" y="0" width="463" height="669" frameX="-723" frameY="-216" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="right1" x="1244" y="668" width="354" height="666" frameX="-812" frameY="-213" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="right2" x="1707" y="0" width="361" height="666" frameX="-801" frameY="-213" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="up1" x="391" y="0" width="390" height="682" frameX="-850" frameY="-203" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="up2" x="0" y="0" width="391" height="683" frameX="-839" frameY="-202" frameWidth="1920" frameHeight="1080"/>
+</TextureAtlas>

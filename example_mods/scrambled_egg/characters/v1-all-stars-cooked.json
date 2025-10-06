@@ -1,0 +1,23 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"indices": [],
+			"fps": 22,
+			"anim": "not_doin_allat",
+			"loop": true,
+			"name": "idle"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/millie",
+	"position": [110, 320],
+	"healthicon": "youre_cooked-v1",
+	"flip_x": true,
+	"healthbar_colors": [255, 0, 0],
+	"camera_position": [-110, 110],
+	"sing_duration": 4,
+	"scale": 2,
+	"_editor_isPlayer": true
+}

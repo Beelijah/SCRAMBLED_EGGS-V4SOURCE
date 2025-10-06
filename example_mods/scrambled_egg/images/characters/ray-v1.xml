@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="ray.png" width="541" height="472">
+	<SubTexture name="alt-down" x="412" y="281" width="128" height="47" frameX="-0" frameY="-0" frameWidth="128" frameHeight="47"/>
+	<SubTexture name="alt-idle1" x="150" y="325" width="128" height="128" frameX="-0" frameY="-0" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="alt-idle2" x="281" y="325" width="128" height="128" frameX="-0" frameY="-0" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="alt-left" x="1" y="175" width="147" height="147" frameX="-0" frameY="-0" frameWidth="147" frameHeight="147"/>
+	<SubTexture name="alt-right" x="263" y="1" width="146" height="146" frameX="-0" frameY="-0" frameWidth="146" frameHeight="146"/>
+	<SubTexture name="alt-up" x="1" y="1" width="128" height="171" frameX="-0" frameY="-0" frameWidth="128" frameHeight="171"/>
+	<SubTexture name="down" x="432" y="132" width="47" height="128" rotated="true" frameX="-0" frameY="-0" frameWidth="128" frameHeight="47"/>
+	<SubTexture name="idle1" x="301" y="150" width="128" height="128" frameX="-0" frameY="-0" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="idle2" x="412" y="1" width="128" height="128" frameX="-0" frameY="-0" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="left" x="151" y="175" width="147" height="147" frameX="-0" frameY="-0" frameWidth="147" frameHeight="147"/>
+	<SubTexture name="right" x="1" y="325" width="146" height="146" frameX="-0" frameY="-0" frameWidth="146" frameHeight="146"/>
+	<SubTexture name="up" x="132" y="1" width="128" height="171" frameX="-0" frameY="-0" frameWidth="128" frameHeight="171"/>
+</TextureAtlas>

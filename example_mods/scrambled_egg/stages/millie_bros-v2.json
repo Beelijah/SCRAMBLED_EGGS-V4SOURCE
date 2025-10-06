@@ -1,0 +1,328 @@
+{
+	"camera_boyfriend": [
+		0,
+		0
+	],
+	"preload": {
+		"images/stageback": 3,
+		"images/stagefront": 3,
+		"images/stagecurtains": 2,
+		"images/stage_light": 2
+	},
+	"_editorMeta": {
+		"boyfriend": "pico-MM_Phase2",
+		"dad": "ray",
+		"gf": "pico-legs"
+	},
+	"boyfriend": [
+		867,
+		141
+	],
+	"stageUI": "",
+	"girlfriend": [
+		189,
+		122
+	],
+	"camera_girlfriend": [
+		0,
+		0
+	],
+	"defaultZoom": 0.75,
+	"objects": [
+		{
+			"x": -1761,
+			"y": -5079,
+			"scale": [
+				10,
+				10
+			],
+			"image": "millie_bg",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "bg",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -2080,
+			"y": 1054,
+			"scale": [
+				3.3,
+				3.3
+			],
+			"image": "dirt",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "dirt2",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 32,
+			"y": 1054,
+			"scale": [
+				3.3,
+				3.3
+			],
+			"image": "dirt",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "dirt",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 36,
+			"y": 844,
+			"scale": [
+				3.3,
+				3.3
+			],
+			"image": "grass",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "grass",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -2049,
+			"y": 843,
+			"scale": [
+				3.3,
+				3.3
+			],
+			"image": "grass",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "grass2",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 707,
+			"y": 590,
+			"scale": [
+				1,
+				1
+			],
+			"image": "appa",
+			"flipX": false,
+			"filters": 2,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "appa",
+			"firstAnimation": "idle",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"animations": [
+				{
+					"offsets": null,
+					"loop": true,
+					"fps": 20,
+					"anim": "idle",
+					"indices": [],
+					"name": "idle"
+				}
+			],
+			"type": "animatedSprite"
+		},
+		{
+			"x": 397,
+			"y": 144,
+			"scale": [
+				1,
+				1
+			],
+			"image": "goobers-fly",
+			"flipX": false,
+			"filters": 0,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "appa-fly",
+			"firstAnimation": "idle",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"animations": [
+				{
+					"offsets": null,
+					"loop": false,
+					"fps": 24,
+					"anim": "idle",
+					"indices": [],
+					"name": "appa"
+				}
+			],
+			"type": "animatedSprite"
+		},
+		{
+			"x": 1114,
+			"y": 592,
+			"scale": [
+				1,
+				1
+			],
+			"image": "blythe",
+			"flipX": false,
+			"filters": 2,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "blythe",
+			"firstAnimation": "idle",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"animations": [
+				{
+					"loop": true,
+					"offsets": null,
+					"anim": "idle",
+					"fps": 20,
+					"name": "idle",
+					"indices": []
+				}
+			],
+			"type": "animatedSprite"
+		},
+		{
+			"x": 822,
+			"y": 33,
+			"scale": [
+				1,
+				1
+			],
+			"image": "goobers-fly",
+			"flipX": false,
+			"filters": 0,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "blythe-fly",
+			"firstAnimation": "idle",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"animations": [
+				{
+					"offsets": null,
+					"loop": false,
+					"fps": 24,
+					"anim": "idle",
+					"indices": [],
+					"name": "blythe"
+				}
+			],
+			"type": "animatedSprite"
+		},
+		{
+			"x": -322,
+			"y": 843,
+			"scale": [
+				3.3,
+				3.3
+			],
+			"image": "grass_run",
+			"flipX": true,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "grass_anim",
+			"firstAnimation": "1",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"animations": [
+				{
+					"loop": true,
+					"offsets": null,
+					"anim": "1",
+					"fps": 480,
+					"name": "",
+					"indices": []
+				}
+			],
+			"type": "animatedSprite"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "gf"
+		},
+		{
+			"type": "boyfriend"
+		}
+	],
+	"opponent": [
+		51,
+		88
+	],
+	"directory": "week1",
+	"camera_speed": 1,
+	"hide_girlfriend": false,
+	"camera_opponent": [
+		0,
+		0
+	]
+}

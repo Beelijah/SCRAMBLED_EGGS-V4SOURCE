@@ -4,7 +4,7 @@ local FlashingLightsEnabled
 -- if you steal i steal your organs
 
 function onCreate()
-    FlashingLightsEnabled = getModSetting('paranoiaLightsEnabled')
+    FlashingLightsEnabled = flashingLights -- using thing in psych menu as v4 doesn't have mod settings
 end
 
 function onEvent(name, value1, value2)

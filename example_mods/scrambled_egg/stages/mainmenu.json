@@ -1,0 +1,53 @@
+{
+	"camera_boyfriend": [
+		5,
+		-60
+	],
+	"_editorMeta": {
+		"boyfriend": "egg-finale",
+		"gf": "gf",
+		"dad": "nedmac"
+	},
+	"preload": {
+		"images/stage_light": 2,
+		"images/stagecurtains": 2,
+		"images/stagefront": 3,
+		"images/stageback": 3
+	},
+	"girlfriend": [
+		460,
+		150
+	],
+	"stageUI": "",
+	"boyfriend": [
+		1050,
+		100
+	],
+	"defaultZoom": 0.9,
+	"objects": [
+		{
+			"type": "gf"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "boyfriend"
+		}
+	],
+	"camera_girlfriend": [
+		0,
+		-25
+	],
+	"camera_speed": 1,
+	"directory": "week1",
+	"opponent": [
+		40,
+		95
+	],
+	"camera_opponent": [
+		100,
+		-5
+	],
+	"hide_girlfriend": true
+}

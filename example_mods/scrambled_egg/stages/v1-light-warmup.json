@@ -1,0 +1,196 @@
+{
+	"camera_boyfriend": [
+		0,
+		0
+	],
+	"preload": {
+		"images/stageback": 3,
+		"images/stagefront": 3,
+		"images/stagecurtains": 2,
+		"images/stage_light": 2
+	},
+	"_editorMeta": {
+		"boyfriend": "all-stars-bf",
+		"dad": "dad",
+		"gf": "gf"
+	},
+	"boyfriend": [
+		-239,
+		226
+	],
+	"stageUI": "",
+	"girlfriend": [
+		400,
+		130
+	],
+	"defaultZoom": 0.35,
+	"objects": [
+		{
+			"type": "gf"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"x": -3868,
+			"y": -3977,
+			"scale": [
+				3.5,
+				10
+			],
+			"image": "bars",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 40,
+			"name": "sprite1",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -1528,
+			"y": 134,
+			"scale": [
+				5,
+				5
+			],
+			"image": "gray static",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 127,
+			"name": "sprite2",
+			"firstAnimation": "idle",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"animations": [
+				{
+					"offsets": null,
+					"loop": true,
+					"fps": 24,
+					"anim": "idle",
+					"indices": [],
+					"name": "static"
+				}
+			],
+			"type": "animatedSprite"
+		},
+		{
+			"x": 484,
+			"y": 729,
+			"scale": [
+				2,
+				2
+			],
+			"image": "bg ripple",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 30,
+			"name": "sprite3",
+			"firstAnimation": "idle",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"animations": [
+				{
+					"offsets": null,
+					"loop": true,
+					"fps": 24,
+					"anim": "idle",
+					"indices": [],
+					"name": "bg ripple"
+				}
+			],
+			"type": "animatedSprite"
+		},
+		{
+			"x": -1000,
+			"y": -501,
+			"scale": [
+				3.5,
+				3.55
+			],
+			"image": "Act_4_FINALE_Lightingmcqueen",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "lightning",
+			"firstAnimation": "idle",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"animations": [
+				{
+					"offsets": null,
+					"loop": true,
+					"fps": 24,
+					"anim": "idle",
+					"indices": [],
+					"name": "line"
+				}
+			],
+			"type": "animatedSprite"
+		},
+		{
+			"x": 1324,
+			"y": 1072,
+			"scale": [
+				5,
+				5
+			],
+			"image": "bf pipe final",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "sprite4",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"type": "boyfriend"
+		}
+	],
+	"camera_girlfriend": [
+		0,
+		0
+	],
+	"opponent": [
+		100,
+		100
+	],
+	"directory": "week1",
+	"camera_speed": 1,
+	"hide_girlfriend": false,
+	"camera_opponent": [
+		0,
+		0
+	]
+}

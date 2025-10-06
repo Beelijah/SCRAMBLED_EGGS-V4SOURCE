@@ -1,0 +1,494 @@
+{
+	"camera_boyfriend": [
+		0,
+		-25
+	],
+	"_editorMeta": {
+		"boyfriend": "egg-finale",
+		"dad": "egg-mc",
+		"gf": "gf"
+	},
+	"girlfriend": [
+		414,
+		310
+	],
+	"stageUI": "normal",
+	"boyfriend": [
+		855,
+		69
+	],
+	"defaultZoom": 0.55,
+	"objects": [
+		{
+			"x": -4825,
+			"y": -3867,
+			"scale": [
+				10000,
+				10000
+			],
+			"filters": 3,
+			"color": "00aaFF",
+			"angle": 0,
+			"name": "sky",
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "square"
+		},
+		{
+			"x": -1235,
+			"y": 1045,
+			"scale": [
+				3,
+				3
+			],
+			"image": "dirt",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "mc-ground2",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -780,
+			"y": -195,
+			"scale": [
+				2.25,
+				2.1
+			],
+			"image": "robloxtexturesky",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "roblox-sky",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -1249,
+			"y": -197,
+			"scale": [
+				1,
+				1
+			],
+			"image": "mcsky",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "mcsky",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 662,
+			"y": 766,
+			"scale": [
+				1,
+				0.7
+			],
+			"image": "robloxtexture2",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "roblox-groundtop",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -915,
+			"y": 773,
+			"scale": [
+				10,
+				5
+			],
+			"image": "grass_block_top10",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "grass-blocktop10",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -755,
+			"y": 773,
+			"scale": [
+				10,
+				5
+			],
+			"image": "grass_block_top9",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "grass-blocktop9",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -595,
+			"y": 773,
+			"scale": [
+				10,
+				5
+			],
+			"image": "grass_block_top8",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "grass-blocktop8",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -435,
+			"y": 773,
+			"scale": [
+				10,
+				5
+			],
+			"image": "grass_block_top7",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "grass-blocktop7",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -275,
+			"y": 773,
+			"scale": [
+				10,
+				5
+			],
+			"image": "grass_block_top6",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "grass-blocktop6",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -115,
+			"y": 773,
+			"scale": [
+				10,
+				5
+			],
+			"image": "grass_block_top5",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "grass-blocktop5",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 45,
+			"y": 773,
+			"scale": [
+				10,
+				5
+			],
+			"image": "grass_block_top4",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "grass-blocktop4",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 205,
+			"y": 773,
+			"scale": [
+				10,
+				5
+			],
+			"image": "grass_block_top3",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "grass-blocktop3",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 365,
+			"y": 773,
+			"scale": [
+				10,
+				5
+			],
+			"image": "grass_block_top2",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "grass-blocktop2",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 525,
+			"y": 773,
+			"scale": [
+				10,
+				5
+			],
+			"image": "grass_block_top",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "grass-blocktop1",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 658,
+			"y": 841,
+			"scale": [
+				1,
+				1
+			],
+			"image": "robloxtexture",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "roblox-ground",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -1214,
+			"y": 853,
+			"scale": [
+				3,
+				3
+			],
+			"image": "grass",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "mc-ground1",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -1066,
+			"y": 763,
+			"scale": [
+				1,
+				1
+			],
+			"image": "robloxtexture2-2",
+			"flipX": true,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "roblox-groundtop2",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": -1042,
+			"y": 841,
+			"scale": [
+				1,
+				1
+			],
+			"image": "robloxtexture-2",
+			"flipX": true,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "roblox-ground2",
+			"antialiasing": false,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"type": "gf"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "boyfriend"
+		},
+		{
+			"x": 169,
+			"y": -59,
+			"scale": [
+				1.3,
+				1.3
+			],
+			"image": "Act_4_FINALE_Lightingmcqueen",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 140,
+			"name": "border",
+			"firstAnimation": "idle",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 100,
+			"animations": [
+				{
+					"offsets": null,
+					"loop": true,
+					"fps": 24,
+					"anim": "idle",
+					"indices": [],
+					"name": "line"
+				}
+			],
+			"type": "animatedSprite"
+		}
+	],
+	"camera_girlfriend": [
+		0,
+		0
+	],
+	"camera_speed": 1,
+	"directory": "",
+	"opponent": [
+		-20,
+		60
+	],
+	"camera_opponent": [
+		0,
+		-50
+	],
+	"hide_girlfriend": true
+}

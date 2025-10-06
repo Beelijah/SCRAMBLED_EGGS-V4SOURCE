@@ -1,0 +1,47 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "empty",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "empty",
+			"indices": []
+		},
+		{
+			"offsets": [0, 0],
+			"indices": [],
+			"fps": 24,
+			"anim": "windows",
+			"loop": true,
+			"name": "windowsBG"
+		},
+		{
+			"offsets": [390, 200],
+			"indices": [],
+			"fps": 24,
+			"anim": "virtualscary",
+			"loop": true,
+			"name": "headbg"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/gf_paranoia-v2",
+	"position": [190, 0],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [165, 0, 77],
+	"camera_position": [0, 0],
+	"sing_duration": 999,
+	"scale": 2,
+	"_editor_isPlayer": false
+}

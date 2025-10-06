@@ -9,12 +9,20 @@ local iconLoopa = 1
 local deleteIconLoopa = 0
 local iconSpeed = 5
 local iconRevolutions = 2
+local windowMovement = true
 
 function onCreate()
     tylerX = getProperty('dad.x')
     tylerY = getProperty('dad.y')
     eggX = getProperty('boyfriend.x')
     eggY = getProperty('boyfriend.y')
+
+    if getTextFromFile('windowmovements.txt') == 'T' then
+        windowMovement = false
+    end
+    if getTextFromFile('windowmovements.txt') == 'F' then
+        windowMovement = true
+    end
 
     setProperty('dadW.visible', false)
     setProperty('bfW.visible', false)
@@ -36,7 +44,7 @@ function onCreate()
     setProperty('wallpaper.visible', false)
     setProperty('fire.visible', false)
 
-    if getModSetting('takeoverFxEnabled') then
+    if windowMovement then
         setPropertyFromClass("openfl.Lib", "application.window.resizable", false)
     end 
 
@@ -45,14 +53,14 @@ function onCreate()
 end
 
 function onPause()
-    if getModSetting('takeoverFxEnabled') then
+    if windowMovement then
         setPropertyFromClass("openfl.Lib", "application.window.resizable", true)
         setPropertyFromClass("openfl.Lib", "application.window.fullscreen", false)
     end
 end
 
 function onResume()
-    if getModSetting('takeoverFxEnabled') then
+    if windowMovement then
         setPropertyFromClass("openfl.Lib", "application.window.resizable", false)
         if curStep > 928 then
             setPropertyFromClass("openfl.Lib", "application.window.fullscreen", true)
@@ -67,7 +75,7 @@ end
 function onEndSong()
     setPropertyFromClass("openfl.Lib", "application.window.resizable", true)
 
-    if getModSetting('takeoverFxEnabled') then
+    if windowMovement then
         setPropertyFromClass("openfl.Lib", "application.window.fullscreen", false)
     end
 end
@@ -75,7 +83,7 @@ end
 function onDestroy()
     setPropertyFromClass("openfl.Lib", "application.window.resizable", true)
     
-    if getModSetting('takeoverFxEnabled') then
+    if windowMovement then
         setPropertyFromClass("openfl.Lib", "application.window.fullscreen", false)
    end
 end
@@ -113,7 +121,7 @@ function onUpdate(elapsed)
     --debugPrint('DADWX: ' .. getProperty('dadW.x') .. ' DADWY: ' .. getProperty('dadW.y'))
     --debugPrint(' ')
 
-    if getModSetting('takeoverFxEnabled') then
+    if windowMovement then
         if keyboardPressed('7') then
             setPropertyFromClass("openfl.Lib", "application.window.resizable", true)
             setPropertyFromClass("openfl.Lib", "application.window.fullscreen", false)
@@ -125,7 +133,7 @@ function onUpdate(elapsed)
         end
 
         if curStep < 927 then
-            if getModSetting('takeoverFxEnabled') then
+            if windowMovement then
                 setPropertyFromClass("openfl.Lib", "application.window.width", 1280)
                 setPropertyFromClass("openfl.Lib", "application.window.height", 720)
             end
@@ -163,7 +171,7 @@ function onStepHit()
 
         runTimer('iconSpawner', 1)
 
-        if getModSetting('takeoverFxEnabled') then
+        if windowMovement then
             setPropertyFromClass("openfl.Lib", "application.window.fullscreen", true)
         end
     end

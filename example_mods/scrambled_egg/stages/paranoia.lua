@@ -1,4 +1,4 @@
-local paranoiaFxEnabled = false
+local paranoiaFxEnabled = false -- this code was ai generated, every other script in v3 and all scripts in v4 are not.
 local WindowDance = false
 local SineElap = 0
 local initialWindowX = 0
@@ -86,7 +86,6 @@ local CAMERA_MOVEMENT_DATA = {
 local isInBorderlessFullscreen = false
 
 function onEndSong()
-    unlockAchievement('hasBeatParanoiaEGG')
 end
 
 function onCreate()
@@ -95,7 +94,14 @@ function onCreate()
     setProperty('black.visible', false)
     setProperty('headBg.visible', false)
 
-    paranoiaFxEnabled = getModSetting('paranoiaFxEnabled')
+    if getTextFromFile('windowmovements.txt') == 'T' then
+        paranoiaFxEnabled = false
+    end
+
+    if getTextFromFile('windowmovements.txt') == 'F' then
+        paranoiaFxEnabled = true
+    end
+
     sickPath = getProperty('ratingsData[0].image')
     print('is paranoia fx enabled? ' .. tostring(paranoiaFxEnabled))
     print('ui path for sick: ' .. sickPath)
@@ -308,7 +314,7 @@ function onUpdate(elapsed)
         end
 
         if curStep == 2242 then
-            setPropertyFromClass("openfl.Lib", "application.window.title", "Friday Night Funkin': Psych Engine");
+            setPropertyFromClass("openfl.Lib", "application.window.title", "Friday Night Funkin': VS scrambled eggs");
         end
 
     else

@@ -1,4 +1,5 @@
 isDebugging = false
+hasHiddenRivalry = false
 
 -- by scrambled_egg3 (except for the event thingy)
 
@@ -65,8 +66,11 @@ end
 
 function onStepHit()
     if not downscroll then
-        if curStep == 128 then
-            doTweenAlpha('rivalryFadeThatsNotLowTaperBecauseItsNotFunnyAnymore2', 'rivalry', 0, 1)
+        if curStep > 128 then
+            if not hasHiddenRivalry then
+                hasHiddenRivalry = true
+                doTweenAlpha('rivalryFadeThatsNotLowTaperBecauseItsNotFunnyAnymore2', 'rivalry', 0, 1)
+            end
         end
 
         if curStep == 560 then
@@ -270,30 +274,25 @@ function onStepHit()
         end
 
         if curStep == 1232 then
-            noteTweenX('noteTween1232-1x', 4, defaultPlayerStrumX0, 1, 'quartOut') 
-            noteTweenX('noteTween1232-2x', 5, defaultPlayerStrumX1, 1, 'quartOut') 
-            noteTweenX('noteTween1232-3x', 6, defaultPlayerStrumX2, 1, 'quartOut') 
-            noteTweenX('noteTween1232-4x', 7, defaultPlayerStrumX3, 1, 'quartOut') 
+            noteTweenY('noteTween423-1z', 4, defaultPlayerStrumY0, 1, 'quartOut')
+            noteTweenY('noteTween423-2z', 5, defaultPlayerStrumY1, 1, 'quartOut')
+            noteTweenY('noteTween423-3z', 6, defaultPlayerStrumY2, 1, 'quartOut')
+            noteTweenY('noteTween423-4z', 7, defaultPlayerStrumY3, 1, 'quartOut')
 
-            noteTweenY('noteTween1232-1y', 4, defaultPlayerStrumY0, 1, 'quartOut')
-            noteTweenY('noteTween1232-2y', 5, defaultPlayerStrumY1, 1, 'quartOut')
-            noteTweenY('noteTween1232-3y', 6, defaultPlayerStrumY2, 1, 'quartOut')
-            noteTweenY('noteTween1232-4y', 7, defaultPlayerStrumY3, 1, 'quartOut')
+            noteTweenX('noteTween423-1y', 4, 412, 1, 'quartOut')
+            noteTweenX('noteTween423-2y', 5, 524, 1, 'quartOut')
+            noteTweenX('noteTween423-3y', 6, 636, 1, 'quartOut')
+            noteTweenX('noteTween423-4y', 7, 748, 1, 'quartOut')
 
-            noteTweenAlpha('noteTween1232-1A', 0, 1, 1)
-            noteTweenAlpha('noteTween1232-2A', 1, 1, 1)
-            noteTweenAlpha('noteTween1232-3A', 2, 1, 1)
-            noteTweenAlpha('noteTween1232-4A', 3, 1, 1)
+            noteTweenX('noteTween423-1B', 0, 412, 1, 'quartOut')
+            noteTweenX('noteTween423-2B', 1, 524, 1, 'quartOut')
+            noteTweenX('noteTween423-3B', 2, 636, 1, 'quartOut')
+            noteTweenX('noteTween423-4B', 3, 748, 1, 'quartOut')
 
-            noteTweenAlpha('noteTween1232-5A', 4, 0, 1)
-            noteTweenAlpha('noteTween1232-6A', 5, 0, 1)
-            noteTweenAlpha('noteTween1232-7A', 6, 0, 1)
-            noteTweenAlpha('noteTween1232-8A', 7, 0, 1)
-
-            noteTweenX('noteTween1232-1x3', 0, defaultOpponentStrumX0, 1, 'quartOut') 
-            noteTweenX('noteTween1232-2x3', 1, defaultOpponentStrumX1, 1, 'quartOut') 
-            noteTweenX('noteTween1232-3x3', 2, defaultOpponentStrumX2, 1, 'quartOut') 
-            noteTweenX('noteTween1232-4x3', 3, defaultOpponentStrumX3, 1, 'quartOut') 
+            noteTweenAlpha('noteTween423-1A', 0, 0.35, 1)
+            noteTweenAlpha('noteTween423-2A', 1, 0.35, 1)
+            noteTweenAlpha('noteTween423-3A', 2, 0.35, 1)
+            noteTweenAlpha('noteTween423-4A', 3, 0.35, 1)
         end
     else
 

@@ -1,0 +1,34 @@
+{
+	"player1": "bf",
+	"songId": "PRESS ENTER TO BEGIN",
+	"songName": "PRESS ENTER TO BEGIN",
+	"notes": [
+		{
+			"endTime": 1920,
+			"sectionBeats": 4,
+			"altAnim": false,
+			"mustHitSection": false,
+			"typeOfSection": 0,
+			"sectionNotes": [],
+			"bpm": 100,
+			"startTime": 0,
+			"changeBPM": false
+		}
+	],
+	"player2": "bf",
+	"player3": "gf",
+	"offset": 0,
+	"song": "title",
+	"arrowSkin": "invis-notes",
+	"validScore": true,
+	"speed": 2.4,
+	"format": "psych_v1_convert",
+	"gfVersion": "bf",
+	"events": [],
+	"chartVersion": "KE1",
+	"gameOverChar": "bf-dead",
+	"stage": "title",
+	"needsVoices": true,
+	"bpm": 100,
+	"noteStyle": ""
+}

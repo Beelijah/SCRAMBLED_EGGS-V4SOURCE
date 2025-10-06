@@ -8,8 +8,62 @@
 	"hideStoryMode": false,
 	"songs": [
 		[
+			"-",
+			"empty",
+			[
+				0,
+				0,
+				0
+			]
+		],
+		[
 			"scrambled-screen",
 			"egg",
+			[
+				55,
+				193,
+				133
+			]
+		],
+		[
+			"blast-processing",
+			"huy",
+			[
+				55,
+				193,
+				133
+			]
+		],
+		[
+			"rivalry",
+			"redguy",
+			[
+				55,
+				193,
+				133
+			]
+		],
+		[
+			"takeover",
+			"tyler",
+			[
+				55,
+				193,
+				133
+			]
+		],
+		[
+			"budget-cuts",
+			"egg-drawn",
+			[
+				55,
+				193,
+				133
+			]
+		],
+		[
+			"cross-platform",
+			"mc-egg",
 			[
 				55,
 				193,

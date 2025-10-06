@@ -1,3 +1,5 @@
+-- edited a bit for v4 so that it can skip the little lock thingy
+
 local hasCheckedKey = false
 local hasSeenCutscene
 local hasAchievement = isAchievementUnlocked('lovesScrambledEggs25')
@@ -15,7 +17,7 @@ function onCreate()
 
     --hasAchievement = false -- keep this commented out, this is only for testing
 
-    --hasAchievement = true -- GUYS THIS IS REVOLUTIONARY TECHNOLOGY
+    hasAchievement = true -- GUYS THIS IS REVOLUTIONARY TECHNOLOGY
 --  ^^ REMOVE THOSE TWO DASHES
     -- TO SKIP THE LOCK SCREEN
     -- LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE, LOOK HERE!!!
@@ -66,9 +68,9 @@ function onCreate()
 end
 
 function onUpdate(elapsed)
-    local currentKeyPressed = keyPressed('accept')
+    local currentKeyPressed = true
     local otherCurrentKeyPressed = keyPressed('back')
-    local timeOfUnlockSound = getSoundTime('unlockSound')
+    local timeOfUnlockSound = 5001
     local hasSetSpriteToUnlocked = false
     local stopRunningLockStuff = false
     local isSkipKeyPressed = keyPressed('up')
@@ -102,10 +104,12 @@ function onUpdate(elapsed)
         setProperty('comboGroup.x', -300)
     end        
 
-    if timeOfUnlockSound > 5000 then
-        stopRunningLockStuff = true
-        
-        restartSong(false)
+    if not hasSeenCutscene then
+        if timeOfUnlockSound > 5000 then
+            stopRunningLockStuff = true
+
+            restartSong(false)
+        end
     end
 
     if hasSeenCutscene then

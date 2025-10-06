@@ -1,0 +1,2 @@
+Value 1: value coded for each anim (found in lua file)
+Value 2: does nothing

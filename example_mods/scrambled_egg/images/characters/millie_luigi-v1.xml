@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="millie_luigi.png" width="1084" height="1188">
+	<SubTexture name="down" x="1" y="1042" width="157" height="145" rotated="true" frameX="-0" frameY="-0" frameWidth="145" frameHeight="157"/>
+	<SubTexture name="idle1" x="931" y="256" width="152" height="251" frameX="-0" frameY="-0" frameWidth="152" frameHeight="251"/>
+	<SubTexture name="idle10" x="1" y="732" width="255" height="152" rotated="true" frameX="-0" frameY="-0" frameWidth="152" frameHeight="255"/>
+	<SubTexture name="idle11" x="259" y="732" width="255" height="152" rotated="true" frameX="-0" frameY="-0" frameWidth="152" frameHeight="255"/>
+	<SubTexture name="idle12" x="621" y="521" width="152" height="256" frameX="-0" frameY="-0" frameWidth="152" frameHeight="256"/>
+	<SubTexture name="idle13" x="262" y="577" width="257" height="152" rotated="true" frameX="-0" frameY="-0" frameWidth="152" frameHeight="257"/>
+	<SubTexture name="idle14" x="621" y="1" width="152" height="257" frameX="-0" frameY="-0" frameWidth="152" frameHeight="257"/>
+	<SubTexture name="idle15" x="466" y="263" width="152" height="258" frameX="-0" frameY="-0" frameWidth="152" frameHeight="258"/>
+	<SubTexture name="idle16" x="1" y="577" width="258" height="152" rotated="true" frameX="-0" frameY="-0" frameWidth="152" frameHeight="258"/>
+	<SubTexture name="idle17" x="1" y="422" width="259" height="152" rotated="true" frameX="-0" frameY="-0" frameWidth="152" frameHeight="259"/>
+	<SubTexture name="idle18" x="466" y="1" width="152" height="259" frameX="-0" frameY="-0" frameWidth="152" frameHeight="259"/>
+	<SubTexture name="idle19" x="311" y="1" width="152" height="260" frameX="-0" frameY="-0" frameWidth="152" frameHeight="260"/>
+	<SubTexture name="idle2" x="931" y="510" width="152" height="251" frameX="-0" frameY="-0" frameWidth="152" frameHeight="251"/>
+	<SubTexture name="idle20" x="311" y="264" width="152" height="260" frameX="-0" frameY="-0" frameWidth="152" frameHeight="260"/>
+	<SubTexture name="idle21" x="1" y="1" width="152" height="261" frameX="-0" frameY="-0" frameWidth="152" frameHeight="261"/>
+	<SubTexture name="idle22" x="156" y="1" width="152" height="261" frameX="-0" frameY="-0" frameWidth="152" frameHeight="261"/>
+	<SubTexture name="idle3" x="513" y="887" width="252" height="152" rotated="true" frameX="-0" frameY="-0" frameWidth="152" frameHeight="252"/>
+	<SubTexture name="idle4" x="931" y="1" width="152" height="252" frameX="-0" frameY="-0" frameWidth="152" frameHeight="252"/>
+	<SubTexture name="idle5" x="776" y="773" width="152" height="253" frameX="-0" frameY="-0" frameWidth="152" frameHeight="253"/>
+	<SubTexture name="idle6" x="1" y="887" width="253" height="152" rotated="true" frameX="-0" frameY="-0" frameWidth="152" frameHeight="253"/>
+	<SubTexture name="idle7" x="776" y="259" width="152" height="254" frameX="-0" frameY="-0" frameWidth="152" frameHeight="254"/>
+	<SubTexture name="idle8" x="776" y="516" width="152" height="254" frameX="-0" frameY="-0" frameWidth="152" frameHeight="254"/>
+	<SubTexture name="idle9" x="776" y="1" width="152" height="255" frameX="-0" frameY="-0" frameWidth="152" frameHeight="255"/>
+	<SubTexture name="left" x="257" y="887" width="253" height="152" rotated="true" frameX="-0" frameY="-7" frameWidth="152" frameHeight="260"/>
+	<SubTexture name="locator" x="931" y="764" width="139" height="203" rotated="true" frameX="-0" frameY="-0" frameWidth="203" frameHeight="139"/>
+	<SubTexture name="right" x="621" y="261" width="152" height="257" frameX="-0" frameY="-4" frameWidth="152" frameHeight="261"/>
+	<SubTexture name="up" x="1" y="265" width="261" height="154" rotated="true" frameX="-0" frameY="-0" frameWidth="154" frameHeight="261"/>
+</TextureAtlas>

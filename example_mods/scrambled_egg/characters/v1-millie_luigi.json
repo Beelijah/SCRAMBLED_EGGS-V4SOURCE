@@ -1,0 +1,63 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [-1, 38],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-1, 39],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-1, 39],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-16, -164],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [0, 0],
+			"anim": "idle",
+			"fps": 21,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"offsets": [0, -130],
+			"loop": true,
+			"fps": 21,
+			"anim": "locator",
+			"indices": [],
+			"name": "locator"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/millie_luigi-v1",
+	"position": [110, 320],
+	"healthicon": "millie_luigi-v1",
+	"flip_x": false,
+	"healthbar_colors": [0, 255, 0],
+	"camera_position": [-70, 70],
+	"sing_duration": 4,
+	"scale": 2,
+	"_editor_isPlayer": true
+}

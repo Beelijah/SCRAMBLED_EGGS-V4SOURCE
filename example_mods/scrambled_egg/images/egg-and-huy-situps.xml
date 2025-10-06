@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="egg-and-huy-situps.png" width="1239" height="1302" spritePadding="0" borderPadding="0">
+	<SubTexture name="egghandstand1" x="762" y="0" width="468" height="269" frameX="0" frameY="-270" frameWidth="468" frameHeight="539"/>
+	<SubTexture name="egghandstand2" x="329" y="0" width="433" height="326" frameX="-31" frameY="-213" frameWidth="468" frameHeight="539"/>
+	<SubTexture name="egghandstand3" x="0" y="0" width="329" height="539" frameX="-94" frameY="0" frameWidth="468" frameHeight="539"/>
+	<SubTexture name="eggsitup1" x="353" y="940" width="319" height="362" frameX="0" frameY="-47" frameWidth="624" frameHeight="453"/>
+	<SubTexture name="eggsitup2" x="430" y="326" width="497" height="280" frameX="0" frameY="-129" frameWidth="624" frameHeight="453"/>
+	<SubTexture name="eggsitup3" x="672" y="941" width="567" height="171" frameX="-2" frameY="-261" frameWidth="624" frameHeight="453"/>
+	<SubTexture name="huy1" x="0" y="872" width="353" height="336" frameX="-30" frameY="-45" frameWidth="433" frameHeight="442"/>
+	<SubTexture name="huy1-NEW" x="0" y="539" width="430" height="333" frameX="-2" frameY="-4" frameWidth="432" frameHeight="337"/>
+	<SubTexture name="huy1-NEWER" x="809" y="606" width="350" height="335" frameX="-2" frameY="-53" frameWidth="432" frameHeight="435"/>
+	<SubTexture name="huy2" x="430" y="606" width="379" height="334" frameX="-31" frameY="-45" frameWidth="433" frameHeight="442"/>
+</TextureAtlas>

@@ -39,11 +39,6 @@ function onCreate()
     --doTweenY('screenBGxTween4', 'bfBG2', -44, bgMoveTime, 'linear')
 end
 
-function onEndSong()
-    unlockAchievement('hasBeatNoModding')
-end -- okay now im actually getting really good at lua scripting
-    -- i am proud, as i started not that long ago :D
-
 function onCountdownStarted()
     local value2 = 0.001
 
@@ -88,7 +83,7 @@ function onUpdate(elapsed)
     cameraX = getCameraFollowX()
     cameraY = getCameraFollowY()
 
-    circleSkin = 'littleCircle' .. getModSetting('noModdingDrawSkin')
+    circleSkin = 'littleCircleBlue' -- changed to remove issues with v4
 
     --print('cameraX: ', cameraX, ' cameraY: ', cameraY)
 
