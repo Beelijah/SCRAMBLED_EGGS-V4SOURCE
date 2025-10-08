@@ -1,27 +1,6 @@
-function onEvent(event, value1, value2, strumTime)
-    if event == 'Change Character' then
-        if value2 == 'egg-mc' or value2 == 'egg-mc-maid' then
-            doTweenAlpha('flashbangShow', 'flashbang', 1, 0.0001)
-        end
-    end
+local hasSkippedCutscene = true -- dont set this to false or else you can skip while its counting down to the song
 
-    if event == 'CSText' then
-        if value1 == '5' then
-            playAnim('mc-cutscene', '1', true)
-            updateOpacity()
-        elseif value1 == '6' then
-            playAnim('mc-cutscene', '2', true)
-            updateOpacity()
-        elseif value1 == '7' then
-            playAnim('mc-cutscene', '3', true)
-            updateOpacity()
-        elseif value1 == '8' then
-            playAnim('mc-cutscene', '4', true)
-            updateOpacity()
-        end
-    end
-end
-
+-- haha funny platform thats crossing
 function onTweenCompleted(tag, vars)
     if tag == 'flashbangShow' then
         doTweenAlpha('flashbangHide3', 'flashbang', 0, 1)
@@ -30,6 +9,10 @@ function onTweenCompleted(tag, vars)
         setProperty('roblox-ground2.visible', false)
         setProperty('roblox-groundtop2.visible', false)
         setProperty('border.visible', true)
+    end
+
+    if tag == 'flashbangShowSkip' then
+        doTweenAlpha('flashbangHide4', 'flashbang', 0, 1)
     end
 end
 
@@ -57,9 +40,15 @@ function onCreate()
     addLuaSprite('blackIntroCover')
     setObjectCamera('blackIntroCover')
 
+    makeLuaText('skipText', 'PRESS "F" TO SKIP', 1280, 0, 615)
+    setTextAlignment('skipText', 'center')
+    setTextBorder('skipText', '5', '000000')
+    setTextSize('skipText', 75)
+    addLuaText('skipText')
+
     makeAnimatedLuaSprite('egg-scared', 'egg-scared', 550, 0)
     addAnimationByPrefix('egg-scared', 'normal', 'normal', 24, false)
-    addAnimationByPrefix('egg-scared', 'scared', 'scared', 24, false)
+    addAnimationByPrefix('egg-scared', 'scared', 'scared', 1000, false)
     addLuaSprite('egg-scared', true)
     setObjectCamera('egg-scared', 'hud')
 
@@ -74,6 +63,7 @@ function onCreate()
 
     setProperty('egg-scared.visible', false)
     setProperty('mc-cutscene.visible', false)
+    setProperty('skipText.alpha', 0)
 
     setProperty('mcsky.visible', false)
     setProperty('border.visible', false)
@@ -83,9 +73,34 @@ end
 
 function onSongStart()
     doTweenAlpha('blackIntroHide', 'blackIntroCover', 0, 5)
+    doTweenAlpha('skipTextShow', 'skipText', 1, 1)
+
+    hasSkippedCutscene = false
+end
+
+function onUpdate(elapsed)
+    if keyboardPressed('F') then
+        if not hasSkippedCutscene then
+            if getSongPosition() < 22000 then
+                hasSkippedCutscene = true
+
+                runHaxeCode([[FlxG.sound.music.time = 22000;]]);
+                runHaxeCode([[resyncVocals();]]);
+
+                cancelTween('blackIntroHide')
+                doTweenAlpha('hideBlackIntroCover', 'blackIntroCover', 0, 0.0001)
+                doTweenAlpha('flashbangShowSkip', 'flashbang', 1, 0.0001)
+                setProperty('skipText.visible', false)
+            end
+        end
+    end
 end
 
 function onStepHit()
+    if curStep == 250 then
+        doTweenAlpha('skipTextHide', 'skipText', 0, 1)
+    end
+
     if curStep == 512 then
         doTweenAlpha('blackIntroShow', 'blackIntroCover', 1, 0.001)
         setProperty('egg-scared.visible', true)
@@ -94,10 +109,7 @@ function onStepHit()
         setProperty('mc-cutscene.alpha', 0)
     end
 
-    if curStep == 576 then
-    end
-
-    if curStep == 624 then
+    if curStep == 632 then
         playAnim('egg-scared', 'scared', true)
     end
 
@@ -106,5 +118,37 @@ function onStepHit()
         
         setProperty('egg-scared.visible', false)
         setProperty('mc-cutscene.visible', false)
+    end
+
+    if curStep == 1440 then -- start flashback
+        doTweenAlpha('flashbangShowSkip', 'flashbang', 1, 0.0001)
+    end
+
+    if curStep == 1696 then -- finish flashback
+        doTweenAlpha('flashbangShowSkip', 'flashbang', 1, 0.0001)
+    end
+end
+
+function onEvent(event, value1, value2, strumTime)
+    if event == 'Change Character' then
+        if value2 == 'egg-mc' or value2 == 'egg-mc-maid' then -- shhh
+            doTweenAlpha('flashbangShow', 'flashbang', 1, 0.0001)
+        end
+    end
+
+    if event == 'CSText' then
+        if value1 == '5' then
+            playAnim('mc-cutscene', '1', true)
+            updateOpacity()
+        elseif value1 == '6' then
+            playAnim('mc-cutscene', '2', true)
+            updateOpacity()
+        elseif value1 == '7' then
+            playAnim('mc-cutscene', '3', true)
+            updateOpacity()
+        elseif value1 == '8' then
+            playAnim('mc-cutscene', '4', true)
+            updateOpacity()
+        end
     end
 end
