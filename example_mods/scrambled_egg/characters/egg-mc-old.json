@@ -1,0 +1,23 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 20,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": true,
+	"image": "characters/egg-old-mc",
+	"position": [-740, -70],
+	"healthicon": "mc-old",
+	"flip_x": false,
+	"healthbar_colors": [75, 75, 75],
+	"camera_position": [130, 140],
+	"sing_duration": 4,
+	"scale": 0.9,
+	"_editor_isPlayer": false
+}

@@ -18,11 +18,18 @@ function onCreate() -- please do not delete these lines or this script.
 end
 
 function onUpdate(elapsed)
-    if keyboardPressed('BACKSPACE') then
-        loadSong('mainmenu')
+    if keyboardPressed('BACKSPACE') or keyboardPressed('ESCAPE') then
+        runTimer('waitToSave', 0.1)
     end
+
     if keyboardPressed('R') then
         restartSong()
+    end
+end
+
+function onTimerCompleted(tag, loops, loopsLeft)
+    if tag == 'waitToSave' then
+        loadSong('mainmenu')
     end
 end
 
