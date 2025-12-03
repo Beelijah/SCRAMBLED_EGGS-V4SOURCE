@@ -1,3 +1,5 @@
+local hasFixes = true
+
 local swordVolume = 1
 local isMuted = false
 local muteTimer = 0
@@ -233,6 +235,10 @@ function onTweenCompleted(tag)
 end
 
 function onCreate()
+    if getTextFromFile('fixes.txt') == 'F' then
+        hasFixes = false
+    end
+
     if songName == 'cat-overdone' then
         makeLuaSprite('poisonMushroom', 'noteSkins/poisonNote')
         setObjectCamera('poisonMushroom', 'game')

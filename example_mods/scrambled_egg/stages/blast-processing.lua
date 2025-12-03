@@ -1,9 +1,10 @@
 local audioQuality = 6
 local audioQualityHasChanged = false
 local oldAudioQuality = 1
-local timeUntilNextQualityChange = 3 -- this number must be above 1
+local timeUntilNextQualityChange = 1.1 -- this number must be above 1
 local canUseNumToChangeQuality = false
 local canAudioQualityChange = true
+local sectionNum = 0
 
 -- by scrambled_egg3 (except for the event thingy)
 
@@ -587,6 +588,17 @@ function onUpdate(elapsed)
 
         setSoundTime('inst', getSongPosition())   -- inst  sync
         setSoundTime('voices', getSongPosition()) -- vocal sync
+    end
+end
+
+function onSectionHit() -- wow low fps fixes finally in the big 4.2
+    sectionNum = sectionNum + 1
+
+    if sectionNum == 5 then
+        setSoundTime('inst', getSongPosition())   -- inst  sync
+        setSoundTime('voices', getSongPosition()) -- vocal sync
+
+        sectionNum = 0
     end
 end
 

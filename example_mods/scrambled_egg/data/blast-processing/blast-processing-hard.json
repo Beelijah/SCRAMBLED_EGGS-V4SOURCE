@@ -2026,8 +2026,9 @@
 		]
 	],
 	"gfVersion": "gf",
-	"stage": "blast-processing",
+	"gameOverChar": "egg-dead",
 	"needsVoices": true,
+	"stage": "blast-processing",
 	"sections": 0,
 	"bpm": 117
 }

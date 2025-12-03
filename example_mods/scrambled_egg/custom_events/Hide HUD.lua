@@ -4,6 +4,8 @@ local isDebuggingScript = 0 -- set to 1 for debugging this script, 0 to not.
 -- if you steal i steal your organs
 -- this one you can steal if you credit me
 
+-- this event is so old and it sucks
+
 function onEvent(name, value1, value2)
     if name == 'Hide HUD' then
         print('Hide HUD event called!')

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="egg-gameover.png" width="1460" height="1351" spritePadding="0" borderPadding="0">
+	<SubTexture name="die1" x="0" y="0" width="381" height="569" frameX="-17" frameY="-118" frameWidth="437" frameHeight="707"/>
+	<SubTexture name="die2" x="381" y="0" width="384" height="561" frameX="-20" frameY="-125" frameWidth="437" frameHeight="707"/>
+	<SubTexture name="die3" x="514" y="561" width="496" height="385" rotated="true" frameX="-7" frameY="-169" frameWidth="437" frameHeight="707"/>
+	<SubTexture name="die4" x="0" y="569" width="514" height="385" rotated="true" frameX="-4" frameY="-183" frameWidth="437" frameHeight="707"/>
+	<SubTexture name="die5" x="765" y="0" width="399" height="480" frameX="0" frameY="-211" frameWidth="437" frameHeight="707"/>
+	<SubTexture name="die6" x="995" y="946" width="465" height="392" rotated="true" frameX="-8" frameY="-224" frameWidth="437" frameHeight="707"/>
+	<SubTexture name="look1" x="0" y="954" width="478" height="397" rotated="true" frameX="-78" frameY="-58" frameWidth="515" frameHeight="557"/>
+	<SubTexture name="look2" x="514" y="946" width="481" height="397" rotated="true" frameX="-78" frameY="-55" frameWidth="515" frameHeight="557"/>
+</TextureAtlas>

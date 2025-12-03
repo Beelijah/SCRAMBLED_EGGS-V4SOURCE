@@ -6,6 +6,13 @@ local initialWindowY = 0
 local DESIRED_WINDOW_WIDTH = 1280
 local DESIRED_WINDOW_HEIGHT = 720
 
+local shouldHideHUD = true
+local introTime = 1
+local shouldDoCountdown = false
+local hasFixes = true -- fixes code is not ai generated
+-- looking through this ai code makes me want to throw up, for every 1 line of real code
+-- has like 10 of just random garbage that it does for genuinely no reason
+
 local actualMonitorWidth = 0
 local actualMonitorHeight = 0
 
@@ -88,8 +95,19 @@ local isInBorderlessFullscreen = false
 function onEndSong()
 end
 
+function onCreatePost()
+    setProperty('healthBar.alpha', 0)
+    setProperty('iconP1.alpha', 0)
+    setProperty('iconP2.alpha', 0)
+    setProperty('scoreTxt.alpha', 0)
+end
+
 function onCreate()
     local sickPath
+
+    if getTextFromFile('fixes.txt') == 'F' then
+        hasFixes = false
+    end
         
     setProperty('black.visible', false)
     setProperty('headBg.visible', false)
@@ -107,8 +125,13 @@ function onCreate()
     print('ui path for sick: ' .. sickPath)
     setPropertyFromClass("openfl.Lib", "application.window.resizable", true)
 
-    actualMonitorWidth = (getPropertyFromClass('openfl.Lib', 'application.window.display.width') or 1920)
-    actualMonitorHeight = (getPropertyFromClass('openfl.Lib', 'application.window.display.height') or 1080)
+    if not hasFixes then
+        actualMonitorWidth = (getPropertyFromClass('openfl.Lib', 'application.window.display.width') or 1920)
+        actualMonitorHeight = (getPropertyFromClass('openfl.Lib', 'application.window.display.height') or 1080)
+    else
+        actualMonitorWidth = getPropertyFromClass('openfl.Lib','application.window.stage.fullScreenWidth') -- thank the vs sonic rewrite round 2 trinity scripter gods
+        actualMonitorHeight = getPropertyFromClass('openfl.Lib','application.window.stage.fullScreenHeight')
+    end
 
     if actualMonitorWidth == 0 then actualMonitorWidth = 1920 end
     if actualMonitorHeight == 0 then actualMonitorHeight = 1080 end
@@ -133,11 +156,39 @@ function onStartCountdown()
     setPropertyFromClass('openfl.Lib', 'application.window.x', startX)
     setPropertyFromClass('openfl.Lib', 'application.window.y', startY)
     
-    return Function_Continue
+    if hasFixes then
+        if not shouldDoCountdown then
+            introThingy()
+            return Function_Stop;
+        else
+            runTimer('waitToHideTheFreakingHudYo', 0.001)
+        end
+    else
+        return Function_Continue -- i dont understand
+    end
+end
+
+function introThingy() -- no need for hasFixes here as it is already activated on this condition
+    setProperty('skipCountdown', true)
+
+    playSound('paranoiaIntro')
+    shouldDoCountdown = true
+    
+    runTimer('paranoiaIntroWait', introTime)
+end
+
+function onTimerCompleted(tag, loops, loopsLeft)
+    if tag == 'paranoiaIntroWait' then
+        startCountdown()
+    end
+
+    if tag == 'waitToHideTheFreakingHudYo' then
+        shouldHideHUD = false
+    end
 end
 
 function onStepHit()
-    local curStep = getProperty('curStep')
+    local curStep = getProperty('curStep') -- i dont understand
     local DANCE_SEGMENTS = {
         {start = 336, ending = 384},
         {start = 400, ending = 448}
@@ -160,13 +211,39 @@ function onStepHit()
         end
     end
 
-    if curStep == 0 and not WindowDance then 
+    if curStep == 0 and not WindowDance then -- i dont understand
     end
 end
 
 function onUpdate(elapsed)
     local curStep = getProperty('curStep')
     local isCurrentlyMaximized = getPropertyFromClass('openfl.Lib', 'application.window.maximized')
+
+    if shouldHideHUD then
+        if hasFixes then
+            noteTweenAlpha('hideHUDevent0', 0, 0, elapsed / 1.01, 'linear')
+            noteTweenAlpha('hideHUDevent1', 1, 0, elapsed / 1.01, 'linear')
+            noteTweenAlpha('hideHUDevent2', 2, 0, elapsed / 1.01, 'linear')
+            noteTweenAlpha('hideHUDevent3', 3, 0, elapsed / 1.01, 'linear')
+            noteTweenAlpha('hideHUDevent4', 4, 0, elapsed / 1.01, 'linear')
+            noteTweenAlpha('hideHUDevent5', 5, 0, elapsed / 1.01, 'linear')
+            noteTweenAlpha('hideHUDevent6', 6, 0, elapsed / 1.01, 'linear')
+            noteTweenAlpha('hideHUDevent7', 7, 0, elapsed / 1.01, 'linear')
+
+            doTweenAlpha('hideHUDevent8', 'healthBar', 0, elapsed / 1.01, 'linear')
+            doTweenAlpha('hideHUDevent9', 'iconP1', 0, elapsed / 1.01, 'linear')
+            doTweenAlpha('hideHUDevent10', 'iconP2', 0, elapsed / 1.01, 'linear')
+            doTweenAlpha('hideHUDevent11', 'scoreTxt', 0, elapsed / 1.01, 'linear')
+            doTweenAlpha('hideHUDevent12', 'timeTxt', 0, elapsed / 1.01, 'linear')
+            doTweenAlpha('hideHUDevent13', 'timeBar', 0, elapsed / 1.01, 'linear')
+        end
+    end
+
+    if hasFixes then
+        if getPropertyFromClass('openfl.Lib', 'application.window.fullscreen') then
+            setPropertyFromClass('openfl.Lib', 'application.window.fullscreen', false)
+        end
+    end
 
     if paranoiaFxEnabled and isCurrentlyMaximized and not isInBorderlessFullscreen then
         setPropertyFromClass('openfl.Lib', 'application.window.maximized', false)

@@ -4,6 +4,8 @@ local camZoomOrigin = 0.75
 local health = 1
 local secondsSinceLastNote = 0
 local framesSinceLastNote = 0
+local hasFixes = true
+local deltaTime = 1
 
 -- feel free to edit these if you're messing with the game
 local rayRunBounceIntensity = 5
@@ -34,6 +36,10 @@ function onBeatHit()
 end
 
 function onCreate()
+    if getTextFromFile('fixes.txt') == 'F' then
+        hasFixes = false
+    end
+    
     setProperty('grass_anim.visible', false) -- REPLACE "object" WITH YOUR OBJECT NAME!!!
     setProperty('blythe-fly.visible', false)
     setProperty('appa-fly.visible', false)
@@ -46,10 +52,18 @@ function onCreate()
     -- making 2 whole characters in lua for the small little effect of a silhouette
     makeAnimatedLuaSprite('picoWhite', 'characters/MM_PicoWhite', -210, 300) -- init stuff
 
-    addAnimationByPrefix('picoWhite', 'singUP', "PicoUp0", 24, true) -- animations
-    addAnimationByPrefix('picoWhite', 'singLEFT', "PicoLeft0", 24, true)
-    addAnimationByPrefix('picoWhite', 'singRIGHT', "PicoRight0", 24, true)
-    addAnimationByPrefix('picoWhite', 'singDOWN', "PicoDown0", 24, true)
+    if hasFixes then
+        addAnimationByPrefix('picoWhite', 'singUP', "PicoUp0", 24, false) -- animations
+        addAnimationByPrefix('picoWhite', 'singLEFT', "PicoLeft0", 24, false)
+        addAnimationByPrefix('picoWhite', 'singRIGHT', "PicoRight0", 24, false)
+        addAnimationByPrefix('picoWhite', 'singDOWN', "PicoDown0", 24, false)
+    else
+        addAnimationByPrefix('picoWhite', 'singUP', "PicoUp0", 24, true) -- animations
+        addAnimationByPrefix('picoWhite', 'singLEFT', "PicoLeft0", 24, true)
+        addAnimationByPrefix('picoWhite', 'singRIGHT', "PicoRight0", 24, true)
+        addAnimationByPrefix('picoWhite', 'singDOWN', "PicoDown0", 24, true)
+    end
+
     addAnimationByPrefix('picoWhite', 'shoot', "PicoShoot", 24, false)
     addAnimationByPrefix('picoWhite', 'idle', "Pico Idle Dance", 24, true)
 
@@ -118,17 +132,18 @@ function onCreate()
 
     -- Force the onUpdate function to run every frame
     -- used this a long time ago... do we still need it?
-    local function callOnUpdate(elapsed)
-        onUpdate(elapsed)
-        return callOnUpdate
-    end
-    setOnUpdate(callOnUpdate)
+
+    -- hell no
+    --local function callOnUpdate(elapsed)
+    --    onUpdate(elapsed)
+    --    return callOnUpdate
+    --end
+    --setOnUpdate(callOnUpdate)
 end
 
 function onSectionHit()
     playAnim('appa', 'idle', true)
     playAnim('blythe', 'idle', true)
-    
 
     if secondsSinceLastNote < 2 then
         playAnim('rayWhite', 'idle', true)
@@ -147,6 +162,8 @@ function onUpdate(elapsed)
     framesSinceLastNote = framesSinceLastNote + 1
     secondsSinceLastNote = framesSinceLastNote / framerate
 
+    deltaTime = elapsed / (1/60) -- made this at 60 fps so this should work
+
     if currentStep == 272 then
         --setProperty('camZooming', false)
         --doTweenZoom('camZoomStart', 'game', 1, 0.75, 'quartOut')
@@ -161,7 +178,7 @@ function onUpdate(elapsed)
     if currentStep == 1950 then
         if not hasDoneWhiteTigerMove then
             doTweenX('tigerWhiteMove', 'tigerWhite', 2160, 6) -- dont need 'linear' since it defaults to it
-            hasDoneWhiteTigerMove = true
+            hasDoneWhiteTigerMove = true                      -- haha very funny as i say this and then use linear a few lines later
         end
     end
 
@@ -192,17 +209,17 @@ function onUpdate(elapsed)
     end
 
     if currentStep == 2144 then -- fade out
-        doTweenAlpha('sdlfgijsldkgjsdlkgjasdasdasdsd', 'tigerWhite', 0, 3.5, 'linear')
-        doTweenAlpha('sdlfgijsdfsdfsldkgjsdlkgjsdaasda', 'rayWhite', 0, 1, 'linear')
-        doTweenAlpha('sdlfgijsldkgjsdlkgjsdaasda', 'picoWhite', 0, 1, 'linear')
-        doTweenAlpha('sdlfgijsldkgjsdlkgjsdab', 'bg', 1, 1, 'linear')
-        doTweenAlpha('sdlfgijsldkgjsdlkgjsdac', 'grass', 1, 1, 'linear')
-        doTweenAlpha('sdlfgijsldkgjsdlkgjsdad', 'dirt', 1, 1, 'linear')
-        doTweenAlpha('sdlfgijsldkgjsdlkgjsdae', 'appa', 1, 1, 'linear')
-        doTweenAlpha('sdlfgijsldkgjsdlkgjsdaf', 'blythe', 1, 1, 'linear')
-        doTweenAlpha('sdlfgijsldkgjsdlkgjsdag', 'dad', 1, 1, 'linear')
-        doTweenAlpha('sdlfgijsldkgjsdlkgjsdah', 'boyfriend', 1, 1, 'linear')
-        doTweenAlpha('sdlfgijsldkgjsdlkgjsdahasdfojksafdjiofasdjklsafdjklasdfjklslajdfkjklfsdjadsfkjljkldsakjljklfdsakljds', 'grass2', 1, 1, 'linear')
+        doTweenAlpha('jasdasdasdsd', 'tigerWhite', 0, 3.5, 'linear')
+        doTweenAlpha('jsdlkgjsdaasda', 'rayWhite', 0, 1, 'linear')
+        doTweenAlpha('jsdaasda', 'picoWhite', 0, 1, 'linear')
+        doTweenAlpha('jsdab', 'bg', 1, 1, 'linear')
+        doTweenAlpha('jsdac', 'grass', 1, 1, 'linear')
+        doTweenAlpha('jsdad', 'dirt', 1, 1, 'linear')
+        doTweenAlpha('jsdae', 'appa', 1, 1, 'linear')
+        doTweenAlpha('jsdaf', 'blythe', 1, 1, 'linear')
+        doTweenAlpha('jsdag', 'dad', 1, 1, 'linear')
+        doTweenAlpha('jsdah', 'boyfriend', 1, 1, 'linear')
+        doTweenAlpha('jsdahasdfojksafdjiofasdjklsafdjklasdfjklslajdfkjklfsdjadsfkjljkldsakjljklfdsakljds', 'grass2', 1, 1, 'linear')
     end
 
     if currentStep >= targetStep then
@@ -216,7 +233,11 @@ function onUpdate(elapsed)
 
         if currentStep <= 2699 then
             if health > 0.35 then
-                addHealth(-0.0005)
+                if hasFixes then
+                    addHealth(-0.0005 * deltaTime)
+                else
+                    addHealth(-0.0005)
+                end
             end
         else
             setHealth(2)
@@ -244,8 +265,12 @@ function onUpdate(elapsed)
         setProperty('picoIcon.x', picoIconX)
 
         if currentStep == targetStep then
-            if difficultyName == "Hard" then
-                setHealth(1.25)
+            if difficultyName == "Hard" then -- there was gonna be other difficulties back then
+                if hasFixes then
+                    setHealth(1.5)
+                else
+                    setHealth(1.25)
+                end
             elseif difficultyName == "Normal" then
                 setHealth(1.5)
             else
@@ -281,7 +306,7 @@ function onUpdate(elapsed)
 end
 
 function onEndSong()
-    unlockAchievement('hasBeatCatOverdue')
+    --unlockAchievement('hasBeatCatOverdue')
 end
 
 function goodNoteHit(index, noteData, noteType, isSustain)

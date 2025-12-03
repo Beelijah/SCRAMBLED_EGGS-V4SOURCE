@@ -1,14 +1,16 @@
 local everyOtherBeat = false
 local hasFadedEye = false
 local secondsElapsed = 0
-
---   vcr-lol.ttf
+local fps = 0.0000000000015
+local hasFixes = true
 
 function onEndSong()
-    unlockAchievement('hasBeatModdingLand')
+    --unlockAchievement('hasBeatModdingLand')
 end
 
 function onUpdate(elapsed)
+    fps = elapsed
+
     if curStep > 447 then
         setProperty('border.visible', false)
         setProperty('floor.visible', false)
@@ -71,13 +73,38 @@ function onTimerCompleted(tag, loops, loopsLeft)
     end
 end
 
+function onCreatePost()
+    if hasFixes then
+        noteTweenX('middlescroll', 4, 412, fps / 1.01, 'linear')
+        noteTweenX('middlescrolm', 5, 524, fps / 1.01, 'linear')
+        noteTweenX('middlescroln', 6, 636, fps / 1.01, 'linear')
+        noteTweenX('middlescrolo', 7, 748, fps / 1.01, 'linear')
+
+        noteTweenX('hideHUDevent0-2', 0, -500, fps / 1.01, 'linear')
+        noteTweenX('hideHUDevent1-2', 1, -500, fps / 1.01, 'linear')
+        noteTweenX('hideHUDevent2-2', 2, -500, fps / 1.01, 'linear')
+        noteTweenX('hideHUDevent3-2', 3, -500, fps / 1.01, 'linear')
+
+        triggerEvent('Change Character', 'BF', 'redguy-new-pixel')
+    end
+end
+
 function onCreate()
     local curEyeX = getProperty('eye.x')
     local curEyeY = getProperty('eye.y')
-    doTweenAlpha('EyeFadeOut', 'eye', 0, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001, 'quartOut')
+
+    if hasFixes then
+        setProperty('eye.alpha', 0)
+    else
+        doTweenAlpha('EyeFadeOut', 'eye', 0, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001, 'quartOut') -- bro
+    end
 
     setProperty('eye.x', curEyeX - 28)
     setProperty('eye.y', curEyeY + 15)
+
+    if getTextFromFile('fixes.txt') == 'F' then -- why is onCreate() all the way down here
+        hasFixes = false
+    end
 end
 
 function onBeatHit()

@@ -5,7 +5,7 @@
 	"weekBackground": "none",
 	"weekBefore": "tutorial",
 	"startUnlocked": true,
-	"hideStoryMode": false,
+	"hideStoryMode": true,
 	"songs": [
 		[
 			"-",
@@ -17,8 +17,8 @@
 			]
 		],
 		[
-			"scrambled-screen",
-			"egg",
+			"takeover",
+			"tyler",
 			[
 				55,
 				193,
@@ -37,15 +37,6 @@
 		[
 			"rivalry",
 			"redguy",
-			[
-				55,
-				193,
-				133
-			]
-		],
-		[
-			"takeover",
-			"tyler",
 			[
 				55,
 				193,

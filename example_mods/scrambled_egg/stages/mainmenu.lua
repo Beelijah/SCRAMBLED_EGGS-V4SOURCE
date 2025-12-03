@@ -1,10 +1,11 @@
 -- wooo main menu lets go
 
--- i dare you to press "O" on the main menu
+-- i dare you to press "carpet" on the main menu
+-- and also type "O" on the main menu
 
 local keyboardTitleMovement = 0.5 -- sensitivity of bg movement (keyboard controls) 0.5 is default
 local fixMouseBorders = true -- fixes moving the mouse out of the 16:9 borders.     true is default
-local rpcIndicator = 'roaming the menus ' -- change the rpc status when in menus.   roaming the menus
+local rpcIndicator = 'roaming the menus ' -- change the rpc status when in menus.   roaming the menus 
 local BgFollowsMouseIntensity = 6 -- lower the number, more intense.                6 is default
 local settingsBGscrollSpeed = 10 -- scroll speed for settingsBG in seconds          10 is default
 local legacyVersionSize = 1.25 -- size of the version logo in the legacy songs menu 1.25 is default
@@ -23,6 +24,8 @@ local currentScreen = 'title'
 local framesGenerated = 0
 local lastFrameMouse = 1
 local alwaysTrue = true
+local hasFixes = false
+local carpetCheck = ''
 local songID = 1
 
 function onCreate()
@@ -40,6 +43,10 @@ function onCreate()
 
     if not checkFileExists('windowmovements.txt') then
         saveFile('windowmovements.txt', 'F')
+    end
+
+    if not checkFileExists('fixes.txt') then
+        saveFile('fixes.txt', 'T')
     end
 
     makeLuaSprite('playSongButtonOutline', 'white', 465, -360)
@@ -101,29 +108,34 @@ function onCreate()
     setObjectCamera('settingsBG', 'hud')
     addLuaSprite('settingsBG', true)
     setObjectOrder('settingsBG', 6)
+    setProperty('settingsBG.antialiasing', false)
     doTweenX('settingsBG-xscroll', 'settingsBG', 0, settingsBGscrollSpeed)
 
     makeLuaSprite('playBG', 'no-modding/bgbottomDOUBLESCREEN-BLUE', -1790, 720)--1152)
     setObjectCamera('playBG', 'hud')
     addLuaSprite('playBG', true)
     setObjectOrder('playBG', 6)
+    setProperty('playBG.antialiasing', false)
     doTweenX('playBG-xscroll', 'playBG', 0, settingsBGscrollSpeed)
 
     makeLuaSprite('creditsBG-top', 'no-modding/bgbottomDOUBLESCREEN-RED', -1790, 720)--1152)
     setObjectCamera('creditsBG-top', 'hud')
     addLuaSprite('creditsBG-top', true)
     setObjectOrder('creditsBG-top', 6)
+    setProperty('creditsBG-top-xscroll.antialiasing', false)
     doTweenX('creditsBG-top-xscroll', 'creditsBG-top', 0, settingsBGscrollSpeed)
 
     makeLuaSprite('creditsBG-bottom', 'no-modding/bgbottomDOUBLESCREEN-RED', -1790, -1152)--1152)
     setObjectCamera('creditsBG-bottom', 'hud')
     addLuaSprite('creditsBG-bottom', true)
     setObjectOrder('creditsBG-bottom', 6)
+    setProperty('creditsBG-bottom-xscroll.antialiasing', false)
     doTweenX('creditsBG-bottom-xscroll', 'creditsBG-bottom', 0, settingsBGscrollSpeed)
 
     makeLuaText('creditsButtonText', 'CREDITS', 0, 895, -235)
     setTextColor('creditsButtonText', 'FFFFFF')
     setTextBorder('creditsButtonText', 5, '000000', 'outline')
+    setProperty('creditsButtonText.antialiasing', false)
     addLuaText('creditsButtonText')
     setObjectOrder('creditsButtonText', 50)
 
@@ -131,6 +143,7 @@ function onCreate()
     setTextColor('backButtonText', 'FFFFFF')
     setTextBorder('backButtonText', 5, '000000', 'outline')
     addLuaText('backButtonText')
+    setProperty('backButtonText.antialiasing', false)
     setObjectOrder('backButtonText', 50)
 
     makeLuaSprite('legacyButtonOutline', 'green', 61, 41)
@@ -147,6 +160,7 @@ function onCreate()
     setTextColor('legacyButtonText', 'FFFFFF')
     setTextBorder('legacyButtonText', 5, '000000', 'outline')
     addLuaText('legacyButtonText')
+    setProperty('legacyButtonText.antialiasing', false)
     setObjectOrder('legacyButtonText', 12)
     
     makeLuaSprite('psychButtonOutline', 'green', 61, 41)
@@ -163,6 +177,7 @@ function onCreate()
     setTextColor('psychButtonText', 'FFFFFF')
     setTextBorder('psychButtonText', 5, '000000', 'outline')
     addLuaText('psychButtonText')
+    setProperty('psychButtonText.antialiasing', false)
     setObjectOrder('psychButtonText', 13)
 
     makeLuaSprite('legacyVersionIndicator', 'versionLogos/v1', 0, 0)
@@ -173,18 +188,21 @@ function onCreate()
     makeLuaText('playButton1Text', 'PLAY', 0, 0, 100)
     setTextColor('playButton1Text', 'FFFFFF')
     setTextBorder('playButton1Text', 5, '000000', 'outline')
+    setProperty('playButton1Text.antialiasing', false)
     addLuaText('playButton1Text')
     setObjectOrder('playButton1Text', 5)
 
     makeLuaText('playButton2Text', 'SETTINGS', 0, 0, 300)
     setTextColor('playButton2Text', 'FFFFFF')
     setTextBorder('playButton2Text', 5, '000000', 'outline')
+    setProperty('playButton2Text.antialiasing', false)
     addLuaText('playButton2Text')
     setObjectOrder('playButton2Text', 4)
 
     makeLuaText('playButton3Text', 'CREDITS', 0, 0, 500)
     setTextColor('playButton3Text', 'FFFFFF')
     setTextBorder('playButton3Text', 5, '000000', 'outline')
+    setProperty('playButton3Text.antialiasing', false)
     addLuaText('playButton3Text')
     setObjectOrder('playButton3Text', 3)
 
@@ -192,6 +210,7 @@ function onCreate()
     setTextColor('playSongButtonText', 'FFFFFF')
     setTextAlignment('playSongButtonText', 'center')
     setTextBorder('playSongButtonText', 5, '000000', 'outline')
+    setProperty('playSongButtonText.antialiasing', false)
     addLuaText('playSongButtonText')
     setObjectOrder('playSongButtonText', 51)
 
@@ -211,6 +230,7 @@ function onCreate()
     setTextBorder('musicSettingText', 5, '000000', 'outline')
     setTextAlignment('musicSettingText', 'center')
     setTextSize('musicSettingText', 60)
+    setProperty('musicSettingText.antialiasing', false)
     addLuaText('musicSettingText')
     setObjectOrder('musicSettingText', 49)
 
@@ -219,6 +239,7 @@ function onCreate()
     setTextBorder('playSelectionText', 5, '000000', 'outline')
     setTextAlignment('playSelectionText', 'center')
     setTextSize('playSelectionText', 60)
+    setProperty('playSelectionText.antialiasing', false)
     addLuaText('playSelectionText')
     setObjectOrder('playSelectionText', 50)
 
@@ -227,6 +248,7 @@ function onCreate()
     setTextBorder('playSelectedText', 5, '000000', 'outline')
     setTextAlignment('playSelectedText', 'center')
     setTextSize('playSelectedText', 60)
+    setProperty('playSelectedText.antialiasing', false)
     addLuaText('playSelectedText')
     setObjectOrder('playSelectedText', 50)
 
@@ -235,6 +257,7 @@ function onCreate()
     setTextBorder('musicSettingInfoText', 5, '000000', 'outline')
     setTextAlignment('musicSettingInfoText', 'center')
     setTextSize('musicSettingInfoText', 120)
+    setProperty('musicSettingInfoText.antialiasing', false)
     addLuaText('musicSettingInfoText')
     setObjectOrder('musicSettingInfoText', 49)
 
@@ -242,6 +265,7 @@ function onCreate()
     setTextColor('versionText', 'FFFFFF')
     setTextBorder('versionText', 5, '000000', 'outline')
     setTextSize('versionText', 21)
+    setProperty('versionText.antialiasing', false)
     addLuaText('versionText')
     setObjectOrder('versionText', 7)
     
@@ -275,10 +299,10 @@ function onCreate()
 
     makeAnimatedLuaSprite('lagCheck', 'check', 220, 800)
     setObjectCamera('lagCheck', 'hud')
-    addAnimationByPrefix('lagCheck', 'checked', 'checkbox finish000', 24, true)
-    addAnimationByPrefix('lagCheck', 'unchecked', 'checkbox000', 24, true)
-    addAnimationByPrefix('lagCheck', 'check', 'checkbox anim000', 24, false)
-    addAnimationByPrefix('lagCheck', 'uncheck', 'checkbox anim reverse000', 24, false)
+    addAnimationByPrefix('lagCheck', 'checked', 'checkbox finish000', 24 / playbackRate, true) -- v4.2 thing; playback rate decides
+    addAnimationByPrefix('lagCheck', 'unchecked', 'checkbox000', 24 / playbackRate, true)      -- animations and therefore made
+    addAnimationByPrefix('lagCheck', 'check', 'checkbox anim000', 24 / playbackRate, false)    -- this one wayyy too quick
+    addAnimationByPrefix('lagCheck', 'uncheck', 'checkbox anim reverse000', 24 / playbackRate, false)
     addOffset('lagCheck', 'uncheck', -10, 29)
     addOffset('lagCheck', 'unchecked', -38, 0)
     addOffset('lagCheck', 'checked', -35, 11)
@@ -292,7 +316,35 @@ function onCreate()
     setTextAlignment('lagText', 'center')
     setTextSize('lagText', 45)
     setObjectCamera('lagText', 'hud')
+    setProperty('lagText.antialiasing', false)
     addLuaText('lagText', true)
+
+    makeAnimatedLuaSprite('fixCheck', 'check', 0, -150) -- normal pos is 175
+    setObjectCamera('fixCheck', 'hud')
+    addAnimationByPrefix('fixCheck', 'checked', 'checkbox finish000', 24 / playbackRate, true)
+    addAnimationByPrefix('fixCheck', 'unchecked', 'checkbox000', 24 / playbackRate, true)
+    addAnimationByPrefix('fixCheck', 'check', 'checkbox anim000', 24 / playbackRate, false)
+    addAnimationByPrefix('fixCheck', 'uncheck', 'checkbox anim reverse000', 24 / playbackRate, false)
+    addOffset('fixCheck', 'uncheck', -10, 29)
+    addOffset('fixCheck', 'unchecked', -38, 0)
+    addOffset('fixCheck', 'checked', -35, 11)
+    addOffset('fixCheck', 'check', 0, 25)
+    playAnim('fixCheck', 'uncheck', true)
+    screenCenter('fixCheck', 'x')
+    setProperty('fixCheck.x', getProperty('fixCheck.x') - 115) -- cool mismatch
+    setProperty('fixCheck.x', getProperty('fixCheck.x') - 55) -- offset both
+    addLuaSprite('fixCheck')
+
+    makeLuaText('fixText', 'Updates', 1420, 0, getProperty('fixCheck.y') + 30)
+    setTextColor('fixText', 'FFFFFF')
+    setTextBorder('fixText', 5, '000000', 'outline')
+    setTextAlignment('fixText', 'center')
+    setTextSize('fixText', 55)
+    setObjectCamera('fixText', 'hud')
+    screenCenter('fixText', 'x')
+    setProperty('fixText.x', getProperty('fixText.x') + 115) -- cool mismatch
+    setProperty('fixText.x', getProperty('fixText.x') - 55) -- offset both
+    addLuaText('fixText', true)
 
     makeLuaText('creditsText', 'CREDITS', 1300, 0, 800)  -- this is the indicator that tells you
     setTextColor('creditsText', 'FFFFFF')                -- you're in the credits menu
@@ -300,6 +352,7 @@ function onCreate()
     setTextAlignment('creditsText', 'center')
     setTextSize('creditsText', 100)
     setObjectCamera('creditsText', 'hud')
+    setProperty('creditsText.antialiasing', false)
     addLuaText('creditsText', true)
 
     precacheMusic('title-vs')
@@ -323,6 +376,7 @@ function onCreate()
     setTextAlignment('GCText', 'center')
     setTextSize('GCText', 32)
     setObjectCamera('GCText', 'hud')
+    setProperty('GCText.antialiasing', false)
     addLuaText('GCText', true)
 
     makeLuaSprite('loreBar', 'black', 0, 680)
@@ -336,6 +390,7 @@ function onCreate()
     setTextAlignment('loreText', 'center')
     setTextSize('loreText', 32)
     setObjectCamera('loreText', 'hud')
+    setProperty('loreText.antialiasing', false)
     addLuaText('loreText', true)
 
     doTweenAlpha('loreBarOpacityTween', 'loreBar', 0, 0.00001, 'linear')
@@ -347,12 +402,18 @@ function onCreate()
 
     syncMusic()
     updateCheckBox()
+    updateCheckBox2()
 
     makeLuaSprite('moddingMouse', 'Mouse') -- this should always be last in onCreate, since the mouse
     setObjectCamera('moddingMouse', 'hud') -- has to be on top of everything
     addLuaSprite('moddingMouse', true)
     scaleObject('moddingMouse', 0.5, 0.5, true)
     setObjectOrder('moddingMouse', 999)
+
+    --makeLuaSprite('filter', 'CRT1280') -- this should always be last in onCreate, since
+    --setObjectCamera('filter', 'hud')   -- the filter has to be on top of everything
+    --setProperty('filter.visible', false)
+    --addLuaSprite('filter', true)
 end
 
 function updateCheckBox()
@@ -371,16 +432,20 @@ function updateCheckBox()
     playSound('scrollMenu')
 end
 
-function onTimerCompleted(tag, loops, loopsLeft)
-    if tag == 'checked' then
-        playAnim('lagCheck', 'checked')
+function updateCheckBox2()
+    cancelTimer('checked2')
+    cancelTimer('unchecked2')
+
+    if getTextFromFile('fixes.txt') == 'T' then
+        playAnim('fixCheck', 'check')
+        runTimer('checked2', 0.375)
     end
-    if tag == 'unchecked' then
-        playAnim('lagCheck', 'unchecked')
+    if getTextFromFile('fixes.txt') == 'F' then
+        playAnim('fixCheck', 'uncheck')
+        runTimer('unchecked2', 0.3)
     end
-    if tag == 'EQTimer' then
-        allowIOCameraZooms = true
-    end
+
+    playSound('scrollMenu')
 end
 
 function onTweenCompleted(tag, vars)
@@ -430,6 +495,24 @@ function syncMusic()
     end
 end
 
+function onTimerCompleted(tag, loops, loopsLeft)
+    if tag == 'checked' then
+        playAnim('lagCheck', 'checked')
+    end
+    if tag == 'unchecked' then
+        playAnim('lagCheck', 'unchecked')
+    end
+    if tag == 'checked2' then
+        playAnim('fixCheck', 'checked')
+    end
+    if tag == 'unchecked2' then
+        playAnim('fixCheck', 'unchecked')
+    end
+    if tag == 'EQTimer' then
+        allowIOCameraZooms = true
+    end
+end
+
 function onUpdate(elapsed)
     local truemouseX = getMouseX('hud')
     local truemouseY = getMouseY('hud')
@@ -461,16 +544,53 @@ function onUpdate(elapsed)
 
     -- ^ commented out as they are not used anywhere in the code
 
-    if keyboardPressed('R') then -- having this before anything else helps when null vars are ref
-        restartSong()
-    end
-
     if keyboardJustPressed('CONTROL') then
         if isCompiledFromEGG then
             loadSong('gc')
         else
             debugPrint('This feature is unavailable. Try switching to EGGs compiled exe?', 'FF0000')
             playSound('denied')
+        end
+    end
+
+    if keyboardJustPressed('C') then
+        carpetCheck = carpetCheck .. 'C'
+    elseif keyboardJustPressed('A') then
+        carpetCheck = carpetCheck .. 'A'
+    elseif keyboardJustPressed('R') then
+        carpetCheck = carpetCheck .. 'R'
+    elseif keyboardJustPressed('P') then
+        carpetCheck = carpetCheck .. 'P'
+    elseif keyboardJustPressed('E') then
+        carpetCheck = carpetCheck .. 'E'
+    elseif keyboardJustPressed('T') then
+        carpetCheck = carpetCheck .. 'T'
+    end
+
+    --debugPrint(carpetCheck)
+
+    if carpetCheck ~= 'C' then
+        if carpetCheck ~= 'CA' then
+            if carpetCheck ~= 'CAR' then
+                if carpetCheck ~= 'CARP' then
+                    if carpetCheck ~= 'CARPE' then
+                        if carpetCheck ~= 'CARPET' then
+                            carpetCheck = ''
+                        end
+                    end
+                end
+            end
+        end
+    end
+    
+    if carpetCheck == 'CARPET' then
+        loadSong('carpet')
+    end
+
+
+    if keyboardPressed('R') then -- having this before anything else helps when null vars are ref
+        if carpetCheck ~= 'CAR' then
+            restartSong()
         end
     end
 
@@ -570,6 +690,11 @@ function onUpdate(elapsed)
     setProperty('playButton1Text.y', 125)
     setProperty('playButton2Text.y', 275 + 50)
     setProperty('playButton3Text.y', 475 + 50)
+
+    if currentScreen == 'legacy' or currentScreen == 'play' then
+        setProperty('fixText.y', getProperty('fixCheck.y') + 30) -- this is not how the other check
+        -- works but im just gonna use this because im too lazy to set up two different tweens
+    end
 
     if currentScreen == 'play' or currentScreen == 'legacy' or currentScreen == 'settings' then
         if keyboardJustPressed('LEFT') then
@@ -713,6 +838,16 @@ function onUpdate(elapsed)
             else
                 currentScreen = 'play'
                 transitionToTitle()
+            end
+        end
+
+        if mouseClicked() then
+            if truemouseX > 434 and truemouseX < 840 and truemouseY > 505 and truemouseY < 585 then
+                if songID > 3 then
+                    if creditsShowingLegacy then
+                        os.execute('start https://www.roblox.com/users/713974665/profile') -- he asked me to be in game
+                    end
+                end
             end
         end
 
@@ -871,7 +1006,6 @@ function onUpdate(elapsed)
         if keyboardJustPressed('BACKSPACE') then
             currentScreen = 'play'
             playSound('backmenu')
-            doTweenAlpha('hideLegacyVersionIndicator', 'legacyVersionIndicator', 0, 1)
             transitionToPlay()
         end
 
@@ -897,11 +1031,20 @@ function onUpdate(elapsed)
             end
         end
 
+        if currentlySelectedButton == 0 then
+            if truemouseX > 393 and truemouseX < 503 then
+                if truemouseY > 173 - 85 and truemouseY < 280 - 85 then
+                    if hasFixes then
+                        currentlySelectedButton = 9
+                    end
+                end
+            end
+        end
+
         if currentlySelectedButton == 4 then
             if mouseClicked() then
                 currentScreen = 'play'
                 playSound('backmenu')
-                doTweenAlpha('hideLegacyVersionIndicator', 'legacyVersionIndicator', 0, 0.00000000000001)
                 transitionToPlay()
             end
 
@@ -917,6 +1060,36 @@ function onUpdate(elapsed)
             setProperty('playSongButtonOutline.visible', true)
         else
             setProperty('playSongButtonOutline.visible', false)
+        end
+
+        if currentlySelectedButton == 9 then
+            if mouseClicked() then
+                if checkFileExists('fixes.txt') then
+                    if getTextFromFile('fixes.txt') == 'T' then
+                        saveFile('fixes.txt', 'F')
+                    elseif getTextFromFile('fixes.txt') == 'F' then
+                        saveFile('fixes.txt', 'T')
+                    else
+                        saveFile('fixes.txt', 'T')
+                    end
+
+                    updateCheckBox2()
+                end
+            end
+        end
+
+        if keyboardJustPressed('B') then
+            if checkFileExists('fixes.txt') then
+                if getTextFromFile('fixes.txt') == 'T' then
+                    saveFile('fixes.txt', 'F')
+                elseif getTextFromFile('fixes.txt') == 'F' then
+                    saveFile('fixes.txt', 'T')
+                else
+                    saveFile('fixes.txt', 'T')
+                end
+                
+                updateCheckBox2()
+            end
         end
 
         if alwaysTrue then
@@ -1139,7 +1312,7 @@ function onUpdate(elapsed)
             if currentlySelectedButton == 1 then
                 if mouseClicked() then
                     currentScreen = 'play'
-                    doTweenAlpha('hideLegacyVersionIndicator', 'legacyVersionIndicator', 0, 0.00000000000001)
+                    setProperty('legacyVersionIndicator.alpha', 0)
                     transitionToPlay()
                 end
             end
@@ -1223,7 +1396,7 @@ function onUpdate(elapsed)
                 if keyboardJustPressed('ENTER') then
                     if currentlySelectedButton == 1 then
                         currentScreen = 'play'
-                        doTweenAlpha('hideLegacyVersionIndicator', 'legacyVersionIndicator', 0, 0.00000000000001)
+                        setProperty('legacyVersionIndicator.alpha', 0)
                         transitionToPlay()
                     end
                 
@@ -1311,20 +1484,26 @@ function updatePlayText()
         end
     elseif currentScreen == 'legacy' then
         setTextSize('loreText', 32)
+        hasFixes = false
+
         if songID == 1 then
             setTextString('playSelectedText', 'debate')
+            hasFixes = true
         end
         if songID == 2 then
             setTextString('playSelectedText', 'paranoia')
+            hasFixes = true
         end
         if songID == 3 then
             setTextString('playSelectedText', 'cat overdone')
         end
         if songID == 4 then
             setTextString('playSelectedText', 'cat overdue')
+            hasFixes = true
         end
         if songID == 5 then
             setTextString('playSelectedText', 'modding land')
+            hasFixes = true
         end
         if songID == 6 then
             setTextString('playSelectedText', 'no modding')
@@ -1334,6 +1513,7 @@ function updatePlayText()
         end
         if songID == 8 then
             setTextString('playSelectedText', 'finale')
+            hasFixes = true
         end
         if songID == 9 then
             setTextString('playSelectedText', 'debate')
@@ -1358,9 +1538,16 @@ function updatePlayText()
         end
         if songID == 16 then
             setTextString('playSelectedText', 'cat overdose')
+            hasFixes = true
         end
         if songID == 17 then
             setTextString('playSelectedText', 'light warmup')
+        end
+
+        if hasFixes then
+            doTweenY('pullDownFixCheck', 'fixCheck', 85, 1, 'quartOut')
+        else
+            doTweenY('pullDownFixCheck', 'fixCheck', -150, 1, 'quartOut')
         end
     end
 
@@ -1464,7 +1651,7 @@ end
 function updateLoreText()
     if currentScreen == 'play' then
         if songID == 1 then
-            setTextString('loreText', 'no lore is available for this song.')
+            setTextString('loreText', 'even family is willing to fight, as tyler joins the battle.')
         end
         if songID == 2 then
             setTextString('loreText', 'huy comes again to fight, this time compressing the game files...')
@@ -1480,10 +1667,10 @@ function updateLoreText()
         end
     elseif currentScreen == 'legacy' then
         if songID == 1 then
-            setTextString('loreText', 'no lore is available for this song.')
+            setTextString('loreText', 'egg and redguy have a debate about pancakes vs waffles.')
         end
         if songID == 2 then
-            setTextString('loreText', 'no lore is available for this song.')
+            setTextString('loreText', 'redguy hacks into eggs computer and has a little fun.')
         end
         if songID == 3 then
             setTextString('loreText', 'huy attempts to poison ray but ends up making him grow.')
@@ -1503,26 +1690,18 @@ function updateLoreText()
         if songID == 8 then
             setTextString('loreText', 'after all of his attempts fail, huy confronts egg himself...')
         end
-        if songID == 9 then
-            setTextString('loreText', 'no lore is available for this song.')
-        end
-        if songID == 10 then
-            setTextString('loreText', 'no lore is available for this song.')
-        end
-        if songID == 11 then
-            setTextString('loreText', 'no lore is available for this song.')
-        end
-        if songID == 12 then
-            setTextString('loreText', 'no lore is available for this song.')
-        end
-        if songID == 13 then
-            setTextString('loreText', 'no lore is available for this song.')
+        if songID > 8 and songID < 14 then
+            if getRandomInt(0, 20) == 1 then -- 5% chance for secret message
+                setTextString('loreText', 'lowkey i dont like v2 as its just v3 but worse')
+            else
+                setTextString('loreText', 'no lore is available for this song.')
+            end
         end
         if songID == 14 then
-            setTextString('loreText', 'no lore is available for this song.')
+            setTextString('loreText', "'yo wsg chat'")
         end
         if songID == 15 then
-            setTextString('loreText', 'no lore is available for this song.')
+            setTextString('loreText', 'redguy makes huy evil')
         end
         if songID == 16 then
             setTextString('loreText', 'millie and friends have a fun battle')
@@ -1604,13 +1783,30 @@ function updateLoreText()
         end
     end
 end
-function transitionToPsychSettings()
+
+function transitionToPsychSettings() -- https://gamebanana.com/questions/53912
+    runHaxeCode([[ // better as it transitions away from hardcoded
+        import options.OptionsState;
+        import backend.MusicBeatState;
+        game.paused = true; // For lua
+        game.vocals.volume = 0;
+        MusicBeatState.switchState(new OptionsState());
+        // if (ClientPrefs.data.pauseMusic != 'None') {
+        //     FlxG.sound.playMusic(Paths.music(Paths.formatToSongPath(ClientPrefs.data.pauseMusic)), game.modchartSounds('pauseMusic').volume);
+        //     FlxTween.tween(FlxG.sound.music, {volume: 1}, 0.8);
+        //     FlxG.sound.music.time = game.modchartSounds('pauseMusic').time;
+        // }
+        OptionsState.onPlayState = true;
+    ]])
+
+    --[[
     if isCompiledFromEGG then
-        triggerEvent('Open Options Menu') -- source code event; name explains what it does
+        --triggerEvent('Open Options Menu') -- source code event; name explains what it does
     else
         debugPrint('This feature is unavailable. Try switching to EGGs compiled exe?', 'FF0000')
         playSound('denied')
     end
+    ]]
 end
 
 function transitionToSong()
@@ -1677,7 +1873,11 @@ function transitionToSong()
             loadSong('v1-paranoia')
         end
         if songID == 16 then
-            loadSong('v1-cat-overdose')
+            if getTextFromFile('fixes.txt') == 'T' then
+                loadSong('v1-cat-overdose-fixes')
+            elseif getTextFromFile('fixes.txt') == 'F' then
+                loadSong('v1-cat-overdose')
+            end
         end
         if songID == 17 then
             loadSong('v1-light-warmup')
@@ -1739,6 +1939,7 @@ function transitionToPlay()
     cancelTween('pullDownSettings')
     cancelTween('pullDownMusicSetting1')
     cancelTween('pullDownMusicSetting2')
+    cancelTween('pullDownFixCheck')
     cancelTween('pullDownBackButton1')
     cancelTween('pullDownBackButton2')
     cancelTween('pullDownCreditsButton1')
@@ -1754,11 +1955,13 @@ function transitionToPlay()
     cancelTween('loreBarOpacityTween')
     cancelTween('loreTextOpacityTween')
 
+
     songID = 1
     updatePlayText()
 
     doTweenColor('doTheThing', 'playBG', 'FFFFFF', 1)
 
+    doTweenAlpha('showLegacyVersionIndicator', 'legacyVersionIndicator', 0, 0.5)
     doTweenAlpha('GCTextOpacityTween', 'GCText', 0, 0.5, 'linear')
     doTweenAlpha('GCBarOpacityTween', 'GCBar', 0, 0.5, 'linear')
     doTweenAlpha('loreTextOpacityTween', 'loreText', 1, 0.5, 'linear')
@@ -1775,6 +1978,7 @@ function transitionToPlay()
     doTweenY('pullDownPlaySongButton1', 'playSongButton', 475, 1, 'quartOut')
     doTweenY('pullDownPlaySongButton2', 'playSongButtonText', 510, 1, 'quartOut')
     doTweenY('pullDownCreditsIndicator2', 'creditsText', 800, 1, 'quartOut')
+    doTweenY('pullDownFixCheck', 'fixCheck', -150, 1, 'quartOut')
 end
 
 function transitionToLegacy()
@@ -1786,6 +1990,7 @@ function transitionToLegacy()
     cancelTween('pullDownLegacyButton2')
     cancelTween('pullDownMusicSetting1')
     cancelTween('pullDownMusicSetting2')
+    cancelTween('pullDownFixCheck')
     cancelTween('pushUpSettings')
     cancelTween('pushUpLegacyButton1')
     cancelTween('pushUpLegacyButton2')
@@ -1810,6 +2015,7 @@ function transitionToLegacy()
     doTweenY('pullDownCreditsButton1', 'creditsButton', 750, 1, 'quartOut')
     doTweenY('pullDownCreditsButton2', 'creditsButtonText', 750, 1, 'quartOut')
     doTweenY('pullDownMusicSetting2', 'musicSettingInfoText', -500, 1, 'quartOut')
+    doTweenY('pullDownFixCheck', 'fixCheck', 85, 1, 'quartOut')
 
     doTweenAlpha('showLegacyVersionIndicator', 'legacyVersionIndicator', 1, 1)
     setProperty('legacyVersionIndicator.visible', true)
@@ -1916,6 +2122,7 @@ function transitionToTitle()
 
     setProperty('legacyVersionIndicator.visible', false)
     doTweenAlpha('hideInstantlyLegacyVersionIndicator', 'legacyVersionIndicator', 0, 0.000001)
+    setProperty('fixText.y', -150)
 
     setProperty('backButtonOutline.visible', false)
     playSound('backmenu')
@@ -1947,7 +2154,6 @@ function onSongStart()
     noteTweenAlpha('hideHUDthingyaaa5', 5, 0, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001, 'linear')
     noteTweenAlpha('hideHUDthingyaaa6', 6, 0, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001, 'linear')
     noteTweenAlpha('hideHUDthingyaaa7', 7, 0, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001, 'linear')
-
 end
 
 function onEndSong()
